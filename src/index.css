@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+@layer base {
+    @font-face {
+        font-family: "Dana";
+        src: url("/public/Font/Dana/FontFamily/Dana-Regular.ttf");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Dana Medium";
+        src: url("/public/Font/Dana/FontFamily/Dana-Medium.ttf");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Dana DemiBold";
+        src: url("/public/Font/Dana/FontFamily/Dana-DemiBold.ttf");
+        font-display: swap;
+    }
+}
+
+@theme {
+    --font-dana: "Dana";
+    --font-DanaMedium: "Dana Medium";
+    --font-DanaDemiBold: "Dana DemiBold";
+}
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+    font-family: "Dana DemiBold";
+}

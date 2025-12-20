@@ -28,17 +28,18 @@ function Header() {
                 {/* Avatar & Menu */}
                 <nav className='flex items-center gap-x-9'>
                     {/* Avatar */}
-                    <div>
-                        <img className='w-18 h-18 bg-cover rounded-full' src='/Image/Avatar.jpg' alt='Avatar' />
+                    <div className='flex items-center justify-center h-full'>
+                        <span className='text-gray-300 text-2xl mt-1.5'>Mohsenical</span>
+                        <img className='w-8 h-8 bg-cover' src='/Image/Logo.png' alt='Avatar' />
                     </div>
 
                     {/* Menu */}
-                    <ul className='flex gap-x-6 text-xl text-gray-300'>
+                    <ul className='flex gap-x-9 text-xl text-gray-300 transition-all *:hover:text-orange-200 '>
                         <li >
-                            <a href="/" className='text-orange-200'>صفعه اصلی</a>
+                            <a href="/">صفعه اصلی</a>
                         </li>
 
-                        <li >
+                        <li>
                             <a href="/about-me">درباره من</a>
                         </li>
 
@@ -57,12 +58,12 @@ function Header() {
                     {/* Theme toggle */}
                     <div className='flex gap-x-2 text-2xl cursor-pointer transition-all' onClick={darkModeHandeler}>
                         {
-                            !darkMode ? (<FaMoon />) : (<FaSun />)
+                            !darkMode ? (<FaMoon className='text-gray-200' />) : (<FaSun className='text-yellow-600' />)
                         }
                     </div>
 
                     {/* Social Media */}
-                    <div className='flex gap-x-4 text-2xl *:cursor-pointer *:hover:text-3xl transition-all'>
+                    <div className='flex gap-x-2 text-2xl *:cursor-pointer '>
                         <FaGithub className='' />
                         <FaTelegram className='text-blue-500' />
                         <FaInstagram className='' />
