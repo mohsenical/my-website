@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Berger from "../Berger/Berger";
+import SideBar from "../SideBar/SideBar";
 
 function Header() {
 
     const [darkMode, setDarkMode] = useState(false)
+    const [sideBar, setSideBar] = useState(false)
 
     useEffect(() => {
         if (!darkMode) {
@@ -20,8 +22,17 @@ function Header() {
         setDarkMode(!darkMode)
     }
 
+    const sideBarOpen = () => {
+        setSideBar(true)
+    }
+
+    const sideBarClose = () => {
+        setSideBar(false)
+
+    }
+
     return (
-        <>
+        <div className="transition-all">
             {/* Header Laptop & Tablet Responsive */}
             <header className='hidden md:inline-block'>
                 <div className="fixed top-8 right-0 left-0 flex items-center w-[98%] lg:w-[90%] h-18 lg:h-24 mx-auto shadow bg-black/50 rounded-3xl">
@@ -30,12 +41,12 @@ function Header() {
                         <nav className='flex items-center gap-x-5 lg:gap-x-9'>
                             {/* Avatar */}
                             <div className='flex items-center gap-x-0.5 justify-center h-full'>
-                                <span className='text-orange-200 text-xl lg:text-2xl mt-1.5'>Mohsenical</span>
+                                <span className='text-white dark:text-zinc-200 text-xl lg:text-2xl mt-1.5'>Mohsenical</span>
                                 <img className='size-6 lg:size-8 bg-cover' src='/Image/Logo.png' alt='Avatar' />
                             </div>
 
                             {/* Menu */}
-                            <ul className='flex gap-x-5 lg:gap-x-9 text-[18px] lg:text-xl text-gray-300 transition-all *:hover:text-orange-200 '>
+                            <ul className='flex gap-x-5 lg:gap-x-9 text-[18px] lg:text-xl dark:text-gray-300 text-zinc-700 transition-all *:hover:text-orange-200 '>
                                 <li >
                                     <a href="/">صفعه اصلی</a>
                                 </li>
@@ -59,16 +70,16 @@ function Header() {
                             {/* Theme toggle */}
                             <div className='flex gap-x-2 text-xl lg:text-2xl cursor-pointer transition-all' onClick={darkModeHandeler}>
                                 {
-                                    !darkMode ? (<FaMoon className='text-gray-200' />) : (<FaSun className='text-yellow-600' />)
+                                    !darkMode ? (<FaSun className='text-yellow-600' />) : (<FaMoon className='text-gray-200' />)
                                 }
                             </div>
 
                             {/* Social Media */}
                             <div className='flex gap-x-2 text-xl lg:text-2xl *:cursor-pointer '>
-                                <FaGithub className='' />
+                                <FaGithub className='text-green-500' />
                                 <FaTelegram className='text-blue-500' />
-                                <FaInstagram className='' />
-                                <FaLinkedin className='' />
+                                <FaInstagram className='text-pink-900' />
+                                <FaLinkedin className='text-blue-800' />
                             </div>
                         </div>
                     </div>
@@ -76,16 +87,20 @@ function Header() {
             </header >
 
             {/* Header Mobile Responsive */}
-            <div className="flex items-center justify-between md:hidden w-full h-22 py-5 px-10 bg-zinc-200">
-                <Berger />
+            <div className="flex items-center justify-between md:hidden w-full h-22 py-5 px-5 dark:bg-black bg-zinc-200">
+                <Berger sideBarOpen={sideBarOpen} />
 
                 <div className='flex items-center gap-x-0.5 justify-center h-full'>
-                    <span className='text-zinc-700 text-2xl mt-1.5'>Mohsenical</span>
+                    <span className='dark:text-gray-200 text-zinc-900 text-2xl mt-1.5'>Mohsenical</span>
                     <img className='size-8 bg-cover' src='/Image/Logo.png' alt='Avatar' />
                 </div>
-
             </div>
-        </>
+
+            {
+                sideBar && (<SideBar darkMode={darkMode} sideBarClose={sideBarClose} />)
+            }
+
+        </div>
     )
 }
 

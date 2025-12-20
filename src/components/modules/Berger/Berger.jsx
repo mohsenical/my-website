@@ -1,14 +1,11 @@
-import "./Berger.css"
-
-function Berger() {
+function Berger({ sideBarOpen }) {
     return (
         <>
-            <label class="burger" for="burger">
-                <input type="checkbox" id="burger" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-            </label>
+            <div className="flex justify-evenly flex-col w-7 h-7" onClick={sideBarOpen}>
+                    <div className="w-full h-1 bg-zinc-700 rounded-2xl"></div>
+                    <div className="w-full h-1 bg-zinc-700 rounded-2xl"></div>
+                    <div className="w-full h-1 bg-zinc-700 rounded-2xl"></div>
+            </div>
         </>
     )
 }

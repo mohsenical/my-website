@@ -18,12 +18,33 @@
         src: url("/public/Font/Dana/FontFamily/Dana-DemiBold.ttf");
         font-display: swap;
     }
+
+    @font-face {
+        font-family: "Dana En";
+        src: url("/public/Font/DanaEn/DanaNoEn-Regular.ttf");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Dana Medium En";
+        src: url("/public/Font/DanaEn/DanaNoEn-Medium.ttf");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Dana DemiBold En";
+        src: url("/public/Font/DanaEn/DanaNoEn-DemiBold.ttf");
+        font-display: swap;
+    }
 }
 
 @theme {
     --font-dana: "Dana";
     --font-DanaMedium: "Dana Medium";
     --font-DanaDemiBold: "Dana DemiBold";
+    --font-dana-en: "Dana En";
+    --font-DanaMedium-en: "Dana Medium En";
+    --font-DanaDemiBold-en: "Dana DemiBold En";
 }
 
 
