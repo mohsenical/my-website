@@ -1,32 +1,20 @@
+
+
+import useDarkMode from "../../../Hoocs/useDarkMode";
+
 import { IoClose } from "react-icons/io5";
-import {
-    FaSun, FaMoon, FaHome, FaUser, FaBlog
-} from "react-icons/fa";
+import { FaSun, FaMoon, FaHome, FaUser, FaBlog } from "react-icons/fa";
 import { FiMessageSquare } from "react-icons/fi";
-import { useEffect, useState } from "react";
+
 
 
 function SideBar({ sideBarClose }) {
 
-    const [darkMode, setDarkMode] = useState(false)
-
-    useEffect(() => {
-        if (!darkMode) {
-            document.body.classList.add("dark")
-            document.body.style.backgroundColor = "#404040"
-        } else {
-            document.body.classList.remove("dark")
-            document.body.style.backgroundColor = "#cccccc"
-        }
-    }, [darkMode])
-
-    const darkModeHandeler = () => {
-        setDarkMode(!darkMode)
-    }
+    const { isDark, toogleDarkMode } = useDarkMode()
 
     return (
         <>
-            <div className="fixed top-0 right-0 bottom-0 w-70 bg-white dark:bg-black z-50 shadow px-3">
+            <div className="fixed top-0 right-0 bottom-0 w-70 bg-white dark:bg-black z-50 shadow px-3 md:hidden">
                 <div className="flex items-center justify-between mt-2 py-5 px-3 border-b border-b-zinc-300">
                     <IoClose
                         className="text-zinc-700 text-2xl text-shadow-black hover:rotate-180 transition-all"
@@ -61,15 +49,15 @@ function SideBar({ sideBarClose }) {
                     </div>
                 </div>
 
-                <div className='flex text-xl mt-5 transition-all' onClick={darkModeHandeler}>
+                <div className='flex text-xl mt-5 transition-all ' onClick={toogleDarkMode}>
                     {
-                        !darkMode ? (<FaMoon className='text-gray-200' />) : (<FaSun className='text-yellow-600' />)
+                        !isDark ? (<FaMoon className='text-black/50' />) : (<FaSun className='text-yellow-600' />)
                     }
                 </div>
             </div>
 
 
-            <div className="fixed inset-0 bg-black/50" onClick={sideBarClose}></div>
+            <div className="fixed inset-0 bg-black/50 md:hidden" onClick={sideBarClose}></div>
 
         </>
     )

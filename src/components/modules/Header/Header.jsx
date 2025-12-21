@@ -1,26 +1,14 @@
 import { useEffect, useState } from "react";
-import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram, FaLinkedin } from "react-icons/fa";
+import useDarkMode from "../../../Hoocs/useDarkMode";
+
 import Berger from "../Berger/Berger";
 import SideBar from "../SideBar/SideBar";
+import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Header() {
 
-    const [darkMode, setDarkMode] = useState(false)
     const [sideBar, setSideBar] = useState(false)
-
-    useEffect(() => {
-        if (!darkMode) {
-            document.body.classList.add("dark")
-            document.body.style.backgroundColor = "#404040"
-        } else {
-            document.body.classList.remove("dark")
-            document.body.style.backgroundColor = "#ffffff"
-        }
-    }, [darkMode])
-
-    const darkModeHandeler = () => {
-        setDarkMode(!darkMode)
-    }
+    const { isDark, toogleDarkMode } = useDarkMode()
 
     const sideBarOpen = () => {
         setSideBar(true)
@@ -28,7 +16,6 @@ function Header() {
 
     const sideBarClose = () => {
         setSideBar(false)
-
     }
 
     return (
@@ -41,12 +28,12 @@ function Header() {
                         <nav className='flex items-center gap-x-5 lg:gap-x-9'>
                             {/* Avatar */}
                             <div className='flex items-center gap-x-0.5 justify-center h-full'>
-                                <span className='text-white dark:text-zinc-200 text-xl lg:text-2xl mt-1.5'>Mohsenical</span>
+                                <span className='text-zinc-200  text-xl lg:text-2xl mt-1.5'>Mohsenical</span>
                                 <img className='size-6 lg:size-8 bg-cover' src='/Image/Logo.png' alt='Avatar' />
                             </div>
 
                             {/* Menu */}
-                            <ul className='flex gap-x-5 lg:gap-x-9 text-[18px] lg:text-xl dark:text-gray-300 text-zinc-700 transition-all *:hover:text-orange-200 '>
+                            <ul className='flex gap-x-5 lg:gap-x-9 text-[18px] lg:text-xl dark:text-gray-300 text-zinc-200 transition-all *:hover:text-orange-200 '>
                                 <li >
                                     <a href="/">صفعه اصلی</a>
                                 </li>
@@ -68,15 +55,15 @@ function Header() {
                         {/* Theme toggle & Social Media */}
                         <div className='flex gap-x-6 lg:gap-x-9'>
                             {/* Theme toggle */}
-                            <div className='flex gap-x-2 text-xl lg:text-2xl cursor-pointer transition-all' onClick={darkModeHandeler}>
+                            <button className='flex gap-x-2 text-xl lg:text-2xl cursor-pointer transition-all' onClick={toogleDarkMode}>
                                 {
-                                    !darkMode ? (<FaSun className='text-yellow-600' />) : (<FaMoon className='text-gray-200' />)
+                                    isDark ? (<FaSun className='text-yellow-600' />) : (<FaMoon className='text-gray-200' />)
                                 }
-                            </div>
+                            </button>
 
                             {/* Social Media */}
                             <div className='flex gap-x-2 text-xl lg:text-2xl *:cursor-pointer '>
-                                <FaGithub className='text-green-500' />
+                                <FaGithub className='text-white' />
                                 <FaTelegram className='text-blue-500' />
                                 <FaInstagram className='text-pink-900' />
                                 <FaLinkedin className='text-blue-800' />
@@ -97,7 +84,7 @@ function Header() {
             </div>
 
             {
-                sideBar && (<SideBar darkMode={darkMode} sideBarClose={sideBarClose} />)
+                sideBar && (<SideBar sideBarClose={sideBarClose} />)
             }
 
         </div>

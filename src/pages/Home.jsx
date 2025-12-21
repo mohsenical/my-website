@@ -5,7 +5,7 @@ function Home() {
 
     return (
         <>
-            <h1 className='text-red-500'>This Is Home Page</h1>
+            <h1 className='text-red-500'></h1>
         </>
     )
 }
