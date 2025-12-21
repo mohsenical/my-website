@@ -1,11 +1,11 @@
-import React from 'react'
+import HeaderSection from "../components/template/HomeFeatuer/HeaderSection";
 
 function Home() {
     console.log("home ");
 
     return (
         <>
-            <h1 className='text-red-500'></h1>
+            <HeaderSection />
         </>
     )
 }

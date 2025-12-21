@@ -53,3 +53,8 @@
 body {
     font-family: "Dana DemiBold";
 }
+
+#root {
+    min-height: 100vh;
+    margin-top: -10;
+}
