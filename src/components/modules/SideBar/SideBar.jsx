@@ -2,9 +2,7 @@ import useDarkMode from "../../../Hoocs/useDarkMode";
 import { IoClose } from "react-icons/io5";
 
 
-import { FaSun, FaMoon, FaHome, FaUser, FaBlog, FaGithub, FaTelegram, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FiMessageSquare } from "react-icons/fi";
-import { AiFillProject } from "react-icons/ai";
+import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { sideBarItems } from "../../../Data/menuItem";
 
 

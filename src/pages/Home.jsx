@@ -1,3 +1,4 @@
+import SocialMedia from "../components/modules/SocialMedia/SocialMedia";
 import HeaderSection from "../components/template/HomeFeatuer/HeaderSection";
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
     return (
         <>
             <HeaderSection />
+            <SocialMedia />
         </>
     )
 }
