@@ -27,7 +27,7 @@ function Header() {
                 <div className="fixed top-0 right-0 left-0 z-50 flex items-center w-screen h-18 lg:h-20 shadow bg-black backdrop-blur-xl">
                     <div className="flex items-center justify-between w-full px-6 lg:px-10 py-5">
                         <nav className='flex items-center gap-x-5 lg:gap-x-9'>
-                            <ul className='flex gap-x-5 lg:gap-x-9 text-[18px] lg:text-xl text-zinc-400 *:hover:text-white transition-colors'>
+                            <ul className='flex gap-x-5 lg:gap-x-9 text-[18px] lg:text-xl text-zinc-400 *:hover:text-white *:transition-colors'>
 
                                 {menuItem.map(menu => (
                                     <li key={menu.id}>
