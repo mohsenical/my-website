@@ -58,7 +58,7 @@ function Header() {
             </header>
 
             {/* Header Mobile Responsive */}
-            <div className="flex fixed inset-0 items-center md:hidden justify-between w-full h-22 py-5 px-5 dark:bg-black bg-zinc-200 z-50">
+            <div className="flex fixed inset-0 items-center md:hidden justify-between w-full h-22 py-5 px-5 dark:bg-black bg-gray-200 z-50">
                 <Berger sideBarOpen={sideBarOpen} />
 
                 <div className='flex items-center justify-center gap-x-3 h-full'>

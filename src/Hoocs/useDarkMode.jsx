@@ -23,6 +23,7 @@ function useDarkMode() {
             root.classList.remove("dark")
             localStorage.setItem("theme", "light")
             root.classList.remove("bg-zinc-900")
+            root.classList.add("bg-sky-950")
         }
     }, [isDark])
 
