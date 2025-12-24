@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useDarkMode from "../../../Hoocs/useDarkMode";
+import { Link } from "react-router";
 
 import Berger from "../Berger/Berger";
 import SideBar from "../SideBar/SideBar";
@@ -45,7 +46,7 @@ function Header() {
                                 }
                             </button>
 
-                            <span className="w-[2px] h-7 bg-gray-200/50"></span>
+                            <span className="w-[2px] h-7 bg-zinc-900/50 dark:bg-gray-200/50"></span>
 
                             <a href="/" className='flex items-center gap-x-0.5 justify-center h-full cursor-pointer'>
                                 <span className='mt-2 text-gray-900 hover:text-zinc-500 dark:text-zinc-400 dark:hover:text-white transition-colors  text-xl lg:text-2xl'>Mohsenical</span>
