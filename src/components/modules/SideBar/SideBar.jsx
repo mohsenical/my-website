@@ -55,7 +55,7 @@ function SideBar({ sideBarClose }) {
             </div>
 
 
-            <div className="fixed inset-0 bg-black/50 md:hidden" onClick={sideBarClose}></div>
+            <div className="fixed inset-0 bg-black/50 block md:hidden z-49" onClick={sideBarClose}></div>
 
         </>
     )
