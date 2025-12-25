@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useDarkMode from "../../../Hoocs/useDarkMode";
 import { Link } from "react-router";
 
@@ -7,12 +7,33 @@ import SideBar from "../SideBar/SideBar";
 import { menuItem } from "../../../Data/menuItem"
 
 import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram, FaLinkedin } from "react-icons/fa";
+import clsx from "clsx";
 
 function Header() {
 
     const [sideBar, setSideBar] = useState(false)
     const { isDark, toogleDarkMode } = useDarkMode()
+    const [fixTop, setFixTop] = useState(false)
 
+
+    useEffect(() => {
+        
+        const fixNavbarToTop = () => {
+            const currentScroll = window.pageYOffset
+            
+            
+            if (currentScroll > 90) {
+                setFixTop(true)
+            } else {
+                setFixTop(false)
+            }
+        }
+        
+        window.addEventListener("scroll", fixNavbarToTop)
+        return () => removeEventListener("scroll", fixNavbarToTop)
+    }, [])
+    
+    
     const sideBarOpen = () => {
         setSideBar(true)
     }
@@ -21,11 +42,12 @@ function Header() {
         setSideBar(false)
     }
 
+
     return (
         <>
             {/* Header Laptop & Tablet Responsive */}
             <header className='hidden md:block'>
-                <div className="fixed top-0 right-0 left-0 z-50 flex items-center w-screen h-18 lg:h-20 shadow bg-white dark:bg-black backdrop-blur-xl">
+                <div className={clsx("z-50 flex right-0 left-0 items-center h-18 lg:h-20 shadow-xl  dark:bg-black/50 backdrop-blur-xl transition-all", fixTop ? "fixed top-7 w-[90%] mx-auto bg-white/50 rounded-2xl" : "fixed top-0 w-screen bg-white")}>
                     <div className="flex items-center justify-between w-full px-6 lg:px-10 py-5">
                         <nav className='flex items-center gap-x-5 lg:gap-x-9'>
                             <ul className='flex gap-x-5 lg:gap-x-9 text-[18px] lg:text-xl text-gray-900 *:hover:text-zinc-500 dark:text-zinc-400 dark:*:hover:text-white *:transition-colors'>

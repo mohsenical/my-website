@@ -18,7 +18,7 @@ function Home() {
                 <div className="">
                     <HeaderSctionBody title="خدمات" desc="کار هایی که من انجام میدم" button="دریافت مشاوره رایگان" btnHref="/" />
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 items-center justify-evenly gap-x-5 gap-y-4 ">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 items-center justify-evenly gap-x-5 gap-y-2 ">
                         {
                             ServicesBoxs.map(box => (
                                 <div key={box.id}>
