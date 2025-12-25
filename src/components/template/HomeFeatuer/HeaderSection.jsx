@@ -1,3 +1,4 @@
+import Button from "../../modules/Button/Button"
 
 
 function HeaderSection() {
@@ -8,14 +9,14 @@ function HeaderSection() {
         <div className="flex flex-col justify-center items-center md:items-start md:h-[38rem] lg:h-[40rem] xl:h-[45rem] w-[100%] md:w-[58%] mt-15 pt-75 md:pt-50 bg-[url(/Image/AvatarBackgroundWhite.png)] dark:bg-[url(/Image/AvatarBackgroundDark.png)] bg-no-repeat bg-center bg-cover md:bg-none dark:md:bg-none">
           <div className="flex flex-col justify-center items-center md:mt-20 space-y-2 backdrop-blur-xl bg-white/40 dark:bg-black/50 p-5 rounded-2xl">
 
-            <div className="space-y-2 px-2 py-4 border-r-2 border-r-green-700 lg:px-2">
+            <div className="space-y-2 px-2 py-4 border-r-2 border-r-sky-900 dark:border-r-green-700 lg:px-2">
               <h1 className='text-xl lg:text-2xl xl:text-3xl text-gray-900 dark:text-zinc-400'>محسن پیغامی</h1>
-              <h2 className='text-md lg:text-xl xl:text-xl text-gray-900 dark:text-zinc-400'>متخصص فرانت اند / برنامه نویس بلاک چین (سالیدیتی)</h2>
+              <h2 className='text-md lg:text-xl xl:text-xl text-gray-900 dark:text-zinc-400'>متخصص فرانت اند / برنامه نویس بلاک چین</h2>
             </div>
 
-            <div className="flex gap-5 mt-5  *:flex *:justify-center *:items-center *:px-5 *:py-2 *:text-xl *:bg-green-700 dark:*:bg-green-900 *:text-gray-900 dark:*:text-zinc-400 *:rounded-xl *:hover:text-white *:transition-colors *:cursor-pointer">
-              <button className='text-xl lg:text-2xl xl:text-xl'>نمونه کار</button>
-              <button className='text-md lg:text-xl xl:text-xl'>تماس</button>
+            <div className="flex gap-5 mt-5  *:flex *:justify-center *:items-center ">
+              <Button title="نمونه کار" />
+              <Button title="تماس" />
             </div>
 
           </div>

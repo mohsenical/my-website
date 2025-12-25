@@ -3,8 +3,8 @@ import React from 'react'
 function BoxItem({ title, desc, icon }) {
 
     return (
-        <div className="flex flex-col justify-center items-start gap-x-5 py-4 px-5 h-[19rem] bg-zinc-800 hover:border-b-2 hover:border-green-700 transition-all cursor-pointer">
-            <div className="mb-5 text-green-700 text-6xl">
+        <div className="flex flex-col justify-center items-start py-4 px-5 mb-10 h-[19rem] shadow bg-sky-900 dark:bg-zinc-800 hover:border-b-2 hover:border-slate-500 dark:hover:border-green-700 transition-all cursor-pointer">
+            <div className="mb-5 text-slate-500 dark:text-green-700 text-6xl">
                 {icon}
             </div>
             <h2 className="text-2xl text-zinc-300 mb-5">{title}</h2>
