@@ -11,7 +11,7 @@ function HeaderSection() {
 
             <div className="space-y-2 px-2 py-4 border-r-2 border-r-sky-900 dark:border-r-green-700 lg:px-2">
               <h1 className='text-xl lg:text-2xl xl:text-3xl text-gray-900 dark:text-zinc-400'>محسن پیغامی</h1>
-              <h2 className='text-md lg:text-xl xl:text-xl text-gray-900 dark:text-zinc-400'>متخصص فرانت اند / برنامه نویس بلاک چین</h2>
+              <h2 className='text-md lg:text-xl xl:text-xl text-gray-700 dark:text-zinc-400'>متخصص فرانت اند / برنامه نویس بلاک چین</h2>
             </div>
 
             <div className="flex gap-5 mt-5  *:flex *:justify-center *:items-center ">
