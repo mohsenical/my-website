@@ -1,5 +1,6 @@
 import BoxItem from "../components/modules/BoxItem/BoxItem";
 import HeaderSctionBody from "../components/modules/HeaderSctionBody/HeaderSctionBody";
+import ScrollTopBtn from "../components/modules/ScrollTopBtn/ScrollTopBtn";
 import SocialMedia from "../components/modules/SocialMedia/SocialMedia";
 import HeaderSection from "../components/template/HomeFeatuer/HeaderSection";
 import { ServicesBoxs } from "../Data/menuItem";
@@ -27,6 +28,8 @@ function Home() {
                             ))
                         }
                     </div>
+
+                    <ScrollTopBtn />
                 </div>
             </div>
         </>
