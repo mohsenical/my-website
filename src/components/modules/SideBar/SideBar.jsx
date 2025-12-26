@@ -1,9 +1,10 @@
 import useDarkMode from "../../../Hoocs/useDarkMode";
 import { IoClose } from "react-icons/io5";
 
-
+import { LiaWhatsapp } from "react-icons/lia";
+import { LiaLinkedin } from "react-icons/lia";
 import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { sideBarItems } from "../../../Data/menuItem";
+import { sideBarItems } from "../../../Data/data";
 
 
 
@@ -38,18 +39,19 @@ function SideBar({ sideBarClose }) {
 
                 </div>
 
-                <div className='flex flex-col gap-y-5 text-xl mt-5 transition-all ' onClick={toogleDarkMode}>
+                <div className='flex flex-col gap-y-5 text-xl mt-5 transition-all ' >
                     <div className="w-7 p-1">
                         {
-                            !isDark ? (<FaMoon className='text-black/50' />) : (<FaSun className='text-yellow-600' />)
+                            !isDark ? (<FaMoon className='text-black/50' onClick={toogleDarkMode} />) : (<FaSun className='text-yellow-600' onClick={toogleDarkMode} />)
                         }
                     </div>
 
-                    <div className='flex gap-x-3 text-xl lg:text-2xl *:cursor-pointer '>
+                    <div className='flex gap-x-3 text-3xl lg:text-2xl *:cursor-pointer '>
                         <FaGithub className='dark:text-white text-black' />
-                        <FaTelegram className='text-blue-500' />
-                        <FaInstagram className='text-pink-900' />
-                        <FaLinkedin className='text-blue-800' />
+                        <FaTelegram className='text-blue-500 bg-gray-200 rounded-full p-0.5' />
+                        <FaInstagram className='bg-pink-900 text-white rounded-full p-0.5' />
+                        <LiaWhatsapp className='bg-green-800 text-white rounded-full p-0.5' />
+                        <LiaLinkedin className='bg-blue-800 text-white rounded-full p-0.5' />
                     </div>
                 </div>
             </div>

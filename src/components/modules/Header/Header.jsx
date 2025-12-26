@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 import Berger from "../Berger/Berger";
 import SideBar from "../SideBar/SideBar";
-import { menuItem } from "../../../Data/menuItem"
+import { menuItem } from "../../../Data/data"
 
 import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram, FaLinkedin } from "react-icons/fa";
 import clsx from "clsx";
