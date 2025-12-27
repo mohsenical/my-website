@@ -9,9 +9,9 @@ function SkillsSection() {
 
             <HeaderSctionBody title="مهارت های من" desc="مهارت ها و تکنولوژی ها" />
 
-            <div className="flex flex-col md:flex-row gap-x-0 md:gap-x-5 gap-y-10 justify-center items-center mx-auto w-[95%] md:w-[80%] py-10 bg-zinc-900 rounded-2xl overflow-hidden">
+            <div className="flex flex-col lg:flex-row gap-x-0 lg:gap-x-5 gap-y-10 justify-center items-center mx-auto w-[95%] md:w-[80%] py-10 bg-zinc-900 rounded-2xl overflow-hidden">
 
-                <div className="w-[90%] md:w-[40%] mx-10">
+                <div className="w-[90%] lg:w-[40%] mx-10">
                     <div className="w-full flex flex-col gap-y-3 justify-center items-start">
                         <h3 className='text-xl text-gray-400'>مهارت‌های من</h3>
                         <h2 className='text-2xl text-white mb-4'> <span className='text-green-700'>کاوش مهارت‌های </span> محبوب </h2>
@@ -26,95 +26,105 @@ function SkillsSection() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-5 justify-center items-center w-[90%] md:w-[65%]   mx-2 md:mx-5">
+                <div className="grid gap-x-2 grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-y-5 w-[90%] lg:w-[65%] mx-5">
 
-                    <div className="flex justify-center items-center w-[25%]">
-                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-5 rounded-xl  ">
+                    <div className="flex justify-center items-center ">
+                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-6 w-full rounded-xl  ">
                             <FaReact className='text-7xl text-green-900' />
 
                             <p>React.js</p>
 
-                            <div className="flex justify-center items-center w-[90%] h-5">100%</div>
+                            <div className="flex justify-center items-center w-[90%] h-10 rounded-md pt-1 bg-green-900 text-white">
+                                <p>100%</p>
+                            </div>
                         </div>
-
                     </div>
 
-                    <div className="flex justify-center items-center w-[25%]">
-                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-5 rounded-xl  ">
+                    <div className="flex justify-center items-center ">
+                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-6 w-full rounded-xl  ">
                             <FaReact className='text-7xl text-green-900' />
 
                             <p>React.js</p>
 
-                            <div className="flex justify-center items-center w-[90%] h-5">100%</div>
+                            <div className="flex justify-center items-center w-[90%] h-10 rounded-md pt-1 bg-green-900 text-white">
+                                <p>100%</p>
+                            </div>
                         </div>
-
                     </div>
 
-                    <div className="flex justify-center items-center w-[25%]">
-                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-5 rounded-xl  ">
+                    <div className="flex justify-center items-center ">
+                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-6 w-full rounded-xl  ">
                             <FaReact className='text-7xl text-green-900' />
 
                             <p>React.js</p>
 
-                            <div className="flex justify-center items-center w-[90%] h-5">100%</div>
+                            <div className="flex justify-center items-center w-[90%] h-10 rounded-md pt-1 bg-green-900 text-white">
+                                <p>100%</p>
+                            </div>
                         </div>
-
                     </div>
 
-                    <div className="flex justify-center items-center w-[25%]">
-                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-5 rounded-xl  ">
+                    <div className="flex justify-center items-center ">
+                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-6 w-full rounded-xl  ">
                             <FaReact className='text-7xl text-green-900' />
 
                             <p>React.js</p>
 
-                            <div className="flex justify-center items-center w-[90%] h-5">100%</div>
+                            <div className="flex justify-center items-center w-[90%] h-10 rounded-md pt-1 bg-green-900 text-white">
+                                <p>100%</p>
+                            </div>
                         </div>
-
                     </div>
 
-                    <div className="flex justify-center items-center w-[25%]">
-                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-5 rounded-xl  ">
+                    <div className="flex justify-center items-center ">
+                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-6 w-full rounded-xl  ">
                             <FaReact className='text-7xl text-green-900' />
 
                             <p>React.js</p>
 
-                            <div className="flex justify-center items-center w-[90%] h-5">100%</div>
+                            <div className="flex justify-center items-center w-[90%] h-10 rounded-md pt-1 bg-green-900 text-white">
+                                <p>100%</p>
+                            </div>
                         </div>
-
                     </div>
 
-                    <div className="flex justify-center items-center w-[25%]">
-                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-5 rounded-xl  ">
+                    <div className="flex justify-center items-center ">
+                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-6 w-full rounded-xl  ">
                             <FaReact className='text-7xl text-green-900' />
 
                             <p>React.js</p>
 
-                            <div className="flex justify-center items-center w-[90%] h-5">100%</div>
+                            <div className="flex justify-center items-center w-[90%] h-10 rounded-md pt-1 bg-green-900 text-white">
+                                <p>100%</p>
+                            </div>
                         </div>
-
                     </div>
 
-                    <div className="flex justify-center items-center w-[25%]">
-                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-5 rounded-xl  ">
+                    <div className="flex justify-center items-center ">
+                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-6 w-full rounded-xl  ">
                             <FaReact className='text-7xl text-green-900' />
 
                             <p>React.js</p>
 
-                            <div className="flex justify-center items-center w-[90%] h-5">100%</div>
+                            <div className="flex justify-center items-center w-[90%] h-10 rounded-md pt-1 bg-green-900 text-white">
+                                <p>100%</p>
+                            </div>
                         </div>
-
                     </div>
 
-                    <div className="flex justify-center items-center w-[25%]">
-                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-5 rounded-xl  ">
+                    <div className="flex justify-center items-center ">
+                        <div className="flex flex-col gap-y-3 justify-center items-center bg-zinc-800 py-5 px-6 w-full rounded-xl  ">
                             <FaReact className='text-7xl text-green-900' />
 
                             <p>React.js</p>
 
-                            <div className="flex justify-center items-center w-[90%] h-5">100%</div>
+                            <div className="flex justify-center items-center w-[90%] h-10 rounded-md pt-1 bg-green-900 text-white">
+                                <p>100%</p>
+                            </div>
                         </div>
-
                     </div>
+
+
                 </div>
             </div>
 
