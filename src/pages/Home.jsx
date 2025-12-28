@@ -16,9 +16,9 @@ function Home() {
             <SocialMedia />
 
             <div className="flex flex-col">
-                {/* <AboutSection /> */}
                 <ServicesSection />
                 <SkillsSection />
+                <AboutSection />
             </div>
 
             <ScrollTopBtn />
