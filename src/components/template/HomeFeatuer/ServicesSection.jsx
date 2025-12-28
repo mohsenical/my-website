@@ -8,7 +8,7 @@ function ServicesSection() {
 
             <HeaderSctionBody title="خدمات" desc="کار هایی که انجام میدهم" button="دریافت مشاوره رایگان" btnHref="/" />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 items-center justify-evenly gap-5 mb-10 md:8 lg:mx-5 xl:3 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 items-center justify-evenly gap-5 mb-5 md:mb-10 md:8 lg:mx-5 xl:3 ">
                 {
                     ServicesBoxs.map(box => (
                         <div key={box.id}>

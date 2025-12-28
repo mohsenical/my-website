@@ -18,7 +18,7 @@ function Home() {
             <div className="flex flex-col">
                 <ServicesSection />
                 <SkillsSection />
-                {/* <AboutSection /> */}
+                <AboutSection />
             </div>
 
             <ScrollTopBtn />

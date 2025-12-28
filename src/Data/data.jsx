@@ -6,6 +6,14 @@ import { FaLaptop } from "react-icons/fa";
 import { SiSolidity } from "react-icons/si";
 import { TbBrandThreejs } from "react-icons/tb";
 
+import { TbBrandTailwind } from "react-icons/tb";
+import { FaBootstrap } from "react-icons/fa";
+import { FaJs } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
+
 const menuItem = [
     { id: 1, title: "معرفی", href: "/" },
     { id: 1, title: "خدمات", href: "/services" },
@@ -42,25 +50,17 @@ const ServicesBoxs = [
         desc: "ساخت قرارداد های هوشمند از جمله توکن و nft در بستر بلاک چین اتریوم . ",
         icon: <SiSolidity />
     },
-    {
-        id: 3,
-        title: "برنامه نویس بلاک چین",
-        desc: "ساخت قرارداد های هوشمند از جمله توکن و nft در بستر بلاک چین اتریوم . ",
-        icon: <SiSolidity />
-    },
-    {
-        id: 3,
-        title: "برنامه نویس بلاک چین",
-        desc: "ساخت قرارداد های هوشمند از جمله توکن و nft در بستر بلاک چین اتریوم . ",
-        icon: <SiSolidity />
-    },
-    {
-        id: 3,
-        title: "برنامه نویس بلاک چین",
-        desc: "ساخت قرارداد های هوشمند از جمله توکن و nft در بستر بلاک چین اتریوم . ",
-        icon: <SiSolidity />
-    },
-
 ]
 
-export { menuItem, sideBarItems, ServicesBoxs }
+const boxSkills = [
+    {id: 1, icon: <TbBrandTailwind />, title: "Tailwind", status: "5 سال"},
+    {id: 2, icon: <FaBootstrap />, title: "Bootstarp", status: "5 سال"},
+    {id: 3, icon: <FaJs />, title: "JS", status: "5 سال"},
+    {id: 4, icon: <FaReact />, title: "React.js", status: "4 سال"},
+    {id: 5, icon: <RiNextjsFill />, title: "Next.js", status: "4 سال"},
+    {id: 6, icon: <TbBrandThreejs />, title: "Three.js", status: "2 سال"},
+    {id: 7, icon: <FaNodeJs />, title: "Node.js", status: "2 سال"},
+    {id: 8, icon: <DiMongodb />, title: "MongoDB", status: "4 سال"},
+]
+
+export { menuItem, sideBarItems, ServicesBoxs, boxSkills }

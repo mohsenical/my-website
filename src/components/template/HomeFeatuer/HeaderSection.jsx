@@ -4,7 +4,7 @@ import Button from "../../modules/Button/Button"
 function HeaderSection() {
   return (
     <>
-      <div className="flex justify-center h-[45rem] w-full md:px-2 lg:px-15 xl:px-30 relative bg-white dark:bg-black shadow overflow-hidden">
+      <div className="flex justify-center h-[45rem] w-full md:px-2 lg:px-15 xl:px-30  bg-white dark:bg-black shadow overflow-hidden">
 
         <div className="flex flex-col justify-center items-center md:items-start md:h-[38rem] lg:h-[40rem] xl:h-[45rem] w-[100%] md:w-[58%] mt-15 pt-75 md:pt-50 bg-[url(/Image/AvatarBackgroundWhite.png)] dark:bg-[url(/Image/AvatarBackgroundDark.png)] bg-no-repeat bg-center bg-cover md:bg-none dark:md:bg-none">
           <div className="flex flex-col justify-center items-center md:mt-20 space-y-2 backdrop-blur-xl bg-white/40 dark:bg-black/50 p-5 rounded-2xl">
