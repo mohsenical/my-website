@@ -1,13 +1,12 @@
 import React from 'react'
-import HeaderSctionBody from '../../../modules/HeaderSctionBody/HeaderSctionBody'
+import HeaderSctionBody from '../../modules/HeaderSctionBody/HeaderSctionBody';
 
-import { FaReact } from "react-icons/fa6";
-import { boxSkills } from '../../../../Data/data';
-import BoxSkills from '../../../modules/BoxSkills/BoxSkills';
+import { boxSkills } from '../../../Data/data';
+import BoxSkills from '../../modules/BoxSkills/BoxSkills';
 
 function SkillsSection() {
     return (
-        <div className=" h-[screen] py-10 px-5 md:px-20 bg-white dark:bg-black w-full ">
+        <div className=" h-[screen] pb-15 px-5 md:px-20 bg-white dark:bg-black w-full ">
 
             <HeaderSctionBody title="مهارت های من" desc="مهارت ها و تکنولوژی ها" />
 
