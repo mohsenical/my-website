@@ -9,7 +9,7 @@ function AboutSection() {
 
             <HeaderSctionBody title="مهارت های من" desc="مهارت ها و تکنولوژی ها" />
 
-            <div className="flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[80%] py-10 bg-sky-950 dark:bg-zinc-800 rounded-2xl overflow-hidden">
+            <div className="flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[80%] lg-[20%] py-10 bg-white/10 dark:bg-zinc-800 rounded-2xl overflow-hidden">
 
                 <div className="w-[90%] lg:w-[90%] xl:w-[40%] mx-10">
                     <div className="w-full flex flex-col gap-y-4 justify-center items-start">
@@ -24,15 +24,15 @@ function AboutSection() {
 
                         <ul className='flex flex-col gap-y-2 items-start justify-center'>
                             <l1 className="flex items-center justify-center gap-x-3 text-white mt-2">
-                                <SiTicktick className='text-green-700 text-xl'/>
+                                <SiTicktick className='text-slate-500 dark:text-green-700 text-xl' />
                                 5+ سال تجربه مفید
                             </l1>
                             <l1 className="flex items-center justify-center gap-x-3 text-white">
-                                <SiTicktick className='text-green-700 text-xl'/>
+                                <SiTicktick className='text-slate-500 dark:text-green-700 text-xl' />
                                 طراح وب حرفه‌ای
                             </l1>
                             <l1 className="flex items-center justify-center gap-x-3 text-white">
-                                <SiTicktick className='text-green-700 text-xl'/>
+                                <SiTicktick className='text-slate-500 dark:text-green-700 text-xl' />
                                 تحویل به موقع
                             </l1>
                         </ul>
@@ -40,7 +40,51 @@ function AboutSection() {
                     </div>
                 </div>
 
-                <div className="bg-red-500 h-[5rem] grid gap-x-2 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-2 xl:gap-y-5 w-[90%] lg:w-[65%] mx-5">
+                <div className="grid gap-5 w-[90%] lg:w-[80%] mx-5">
+                    <div className="grid gap-x-4 gap-y-5 grid-cols-1 lg:grid-cols-2 *:flex *:flex-col *:space-y-1 ">
+                        <div className="">
+                            <label className='text-gray-400' htmlFor="name">نام و نشان</label>
+                            <input
+                                className='px-4 py-2 rounded-xl bg-white/20 text-white placeholder-white/60 border border-white/30 focus:border-slate-500 dark:focus:border-green-900 focus:ring-2 focus:ring-slate-500 dark:focus:ring-green-900 outline-none transition'
+                                type="text"
+                                id='name'
+                                placeholder='محسن پیغامی' />
+                        </div>
+
+                        <div className="">
+                            <label className='text-gray-400' htmlFor="">ایمیل</label>
+                            <input
+                                className='px-4 py-2 rounded-xl bg-white/20 text-white placeholder-white/60 border border-white/30 focus:border-slate-500 dark:focus:border-green-900 focus:ring-2 focus:ring-slate-500 dark:focus:ring-green-900 outline-none transition'
+                                type="email"
+                                placeholder='mohsenical.web@gmail.com' />
+                        </div>
+
+                        <div className="">
+                            <label className='text-gray-400' htmlFor="">موبایل</label>
+                            <input
+                                className='px-4 py-2 rounded-xl bg-white/20 text-white placeholder-white/60 border border-white/30 focus:border-slate-500 dark:focus:border-green-900 focus:ring-2 focus:ring-slate-500 dark:focus:ring-green-900 outline-none transition'
+                                type="text"
+                                placeholder='09145450730' />
+                        </div>
+
+                        <div className="">
+                            <label className='text-gray-400' htmlFor="">موضوع</label>
+                            <input
+                                className='px-4 py-2 rounded-xl bg-white/20 text-white placeholder-white/60 border border-white/30 focus:border-slate-500 dark:focus:border-green-900 focus:ring-2 focus:ring-slate-500 dark:focus:ring-green-900 outline-none transition'
+                                type="text"
+                                placeholder='موضوع پیام شما' />
+                        </div>
+                    </div>
+                    <div className="w-full">
+                        <div className="w-full flex flex-col">
+                            <label className='text-gray-400' htmlFor="">پیغام</label>
+                            <textarea
+                                className='px-4 py-2 rounded-xl bg-white/20 text-white placeholder-white/60 border border-white/30 focus:border-slate-500 dark:focus:border-green-900 focus:ring-2 focus:ring-slate-500 dark:focus:ring-green-900 outline-none transition'
+                                name=""
+                                id=""
+                                placeholder='متن پیام شما'></textarea>
+                        </div>
+                    </div>
                 </div>
             </div>
 
