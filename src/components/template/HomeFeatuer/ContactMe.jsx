@@ -9,7 +9,9 @@ function AboutSection() {
 
             <HeaderSctionBody title="مهارت های من" desc="مهارت ها و تکنولوژی ها" />
 
-            <div className="flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[80%] lg-[20%] py-10 bg-white/10 dark:bg-zinc-800 rounded-2xl overflow-hidden">
+            <div
+                data-aos="fade-right"
+                className="flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[80%] lg-[20%] py-10 bg-white/10 dark:bg-zinc-800 rounded-2xl overflow-hidden">
 
                 <div className="w-[90%] lg:w-[90%] xl:w-[40%] mx-10">
                     <div className="w-full flex flex-col gap-y-4 justify-center items-start">
