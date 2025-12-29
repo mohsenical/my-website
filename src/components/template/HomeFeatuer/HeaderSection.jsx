@@ -22,7 +22,7 @@ function HeaderSection() {
           </div>
         </div>
 
-        <div className="hidden md:block md:flex ml-5 justify-center relative items-start md:w-[40%]">
+        <div className="hidden md:block  ml-5 justify-center relative items-start md:w-[40%]">
           <img src="/Image/AvatarBackgroundDark.png" className="dark:block absolute bottom-0 ml-15 left-0 w-full h-[80%] max-w-sm mx-auto object-cover object-center" alt="Avatar" />
           <img src="/Image/AvatarBackgroundWhite.png" className="dark:hidden absolute bottom-0 ml-15 left-0 w-full h-[80%] max-w-sm mx-auto object-cover object-center" alt="Avatar" />
         </div>
