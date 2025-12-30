@@ -1,3 +1,4 @@
+import Footer from "../components/modules/Footer/Footer";
 import HeaderSctionBody from "../components/modules/HeaderSctionBody/HeaderSctionBody";
 import ScrollTopBtn from "../components/modules/ScrollTopBtn/ScrollTopBtn";
 import SocialMedia from "../components/modules/SocialMedia/SocialMedia";
@@ -32,6 +33,8 @@ function Home() {
                     <ContactMe />
                 </div>
             </div>
+
+            <Footer />
 
             <ScrollTopBtn />
         </>
