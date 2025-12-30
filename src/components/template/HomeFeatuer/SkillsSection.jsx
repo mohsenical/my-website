@@ -1,18 +1,15 @@
-import React from 'react'
-import HeaderSctionBody from '../../modules/HeaderSctionBody/HeaderSctionBody';
-
 import { boxSkills } from '../../../Data/data';
 import BoxSkills from '../../modules/BoxSkills/BoxSkills';
 
 function SkillsSection() {
     return (
-        <div className=" h-[screen] pb-15 px-5 md:px-20 bg-gray-200 dark:bg-black w-full ">
+        <div className=" h-[screen] pb-15 px-5 md:px-20 w-full ">
 
-            <HeaderSctionBody title="مهارت های من" desc="مهارت ها و تکنولوژی ها" />
 
             <div
                 data-aos="zoom-in"
-                className="flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[80%] py-10 bg-sky-950 dark:bg-zinc-900 rounded-2xl overflow-hidden shadow-xl">
+                className="flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[80%] py-10 bg-white/10 dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-md"
+            >
 
                 <div className="w-[90%] lg:w-[90%] xl:w-[40%] mx-10">
                     <div className="w-full flex flex-col gap-y-3 justify-center items-start">
