@@ -8,7 +8,7 @@ function SkillsSection() {
 
             <div
                 data-aos="zoom-in"
-                className="flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[80%] py-10 bg-white/10 dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-md"
+                className="flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[90%] py-4 md:py-5 lg:py-10 bg-white/10 dark:bg-black/50 rounded-2xl overflow-hidden shadow-md"
             >
 
                 <div className="w-[90%] lg:w-[90%] xl:w-[40%] mx-10">

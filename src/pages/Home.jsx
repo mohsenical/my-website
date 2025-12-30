@@ -22,7 +22,7 @@ function Home() {
                     <ServicesSection />
                 </div>
 
-                <div>
+                <div className="">
                     <HeaderSctionBody title="مهارت های من" desc="مهارت ها و تکنولوژی ها" />
                     <SkillsSection />
                 </div>
