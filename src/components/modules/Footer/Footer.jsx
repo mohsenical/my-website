@@ -11,7 +11,7 @@ function Footer() {
 
             <div className="flex flex-col gap-y-4 py-4 px-5 w-[90%] mb-5 md:w-[30%] h-full">
                 <div className="">
-                    <h1 className='text-xl text-gray-900 dark:text-white '>محسن پیغامی</h1>
+                    <h1 className='text-xl dark:text-white/80 text-gray-900 danpm run devrk:text-white '>محسن پیغامی</h1>
                 </div>
 
                 <p className='w-full md:w-[90%] dark:text-gray-400 text-black mr-5'>
@@ -20,42 +20,42 @@ function Footer() {
             </div>
 
             <div className="flex flex-col gap-y-4 py-4 px-5 w-[90%] mb-5 md:w-[30%] h-full">
-                <h2 className='text-xl text-gray-900 dark:text-white '>لینک های سریع</h2>
+                <h2 className='text-xl dark:text-white/80 text-gray-900 danpm run devrk:text-white '>لینک های سریع</h2>
 
                 <ul className=' flex flex-col gap-y-4 *:dark:text-gray-400 *:text-black mr-4'>
                     <li className=''>
                         <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-500 dark:bg-green-900 rounded-full'></div>
+                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
                             <a>معرفی</a>
                         </div>
                     </li>
                     <li className=''>
                         <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-500 dark:bg-green-900 rounded-full'></div>
+                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
                             <a>خدمات</a>
                         </div>
                     </li>
                     <li className=''>
                         <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-500 dark:bg-green-900 rounded-full'></div>
+                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
                             <a>پروژه ها</a>
                         </div>
                     </li>
                     <li className=''>
                         <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-500 dark:bg-green-900 rounded-full'></div>
+                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
                             <a>مهارت ها</a>
                         </div>
                     </li>
                     <li className=''>
                         <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-500 dark:bg-green-900 rounded-full'></div>
+                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
                             <a>تماس</a>
                         </div>
                     </li>
                     <li className=''>
                         <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-500 dark:bg-green-900 rounded-full'></div>
+                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
                             <a>مقالات</a>
                         </div>
                     </li>
@@ -63,20 +63,20 @@ function Footer() {
             </div>
 
             <div className="flex flex-col gap-y-4 py-4 px-5 w-[90%] mb-5 md:w-[30%] h-full">
-                <h2 className='text-xl text-gray-900 dark:text-white '>دسترسی ها</h2>
+                <h2 className='text-xl dark:text-white/80 text-gray-900 danpm run devrk:text-white '>دسترسی ها</h2>
 
                 <div className="flex gap-x-2 items-center justify-start mr-5">
-                    <IoLocationSharp className='text-2xl text-slate-500 dark:text-green-700' />
+                    <IoLocationSharp className='text-2xl text-slate-700 dark:text-green-700' />
                     <sapn className="text-md text-black dark:text-gray-400">ایران / ارومیه</sapn>
                 </div>
 
                 <div className="flex gap-x-2 items-center justify-start mr-5">
-                    <FiPhone className='text-2xl text-slate-500 dark:text-green-700' />
+                    <FiPhone className='text-2xl text-slate-700 dark:text-green-700' />
                     <sapn className="text-md text-black dark:text-gray-400">mohsenical.web@gmail.com</sapn>
                 </div>
 
                 <div className="flex gap-x-2 items-center justify-start mr-5">
-                    <CgMail className='text-2xl text-slate-500 dark:text-green-700' />
+                    <CgMail className='text-2xl text-slate-700 dark:text-green-700' />
                     <sapn className="text-md text-black dark:text-gray-400">0914-545-0730</sapn>
                 </div>
             </div>

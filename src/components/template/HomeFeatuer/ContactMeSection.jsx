@@ -1,7 +1,7 @@
 import { SiTicktick } from "react-icons/si";
 import Form from "../../modules/Form/Form";
 
-function AboutSection() {
+function ContactMeSection() {
     return (
         <div className=" h-[screen] pb-15 px-5 md:px-24 w-full ">
             <div
@@ -45,4 +45,4 @@ function AboutSection() {
     )
 }
 
-export default AboutSection
+export default ContactMeSection
