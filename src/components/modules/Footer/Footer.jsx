@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { IoLocationSharp } from "react-icons/io5";
-import { FiPhone } from "react-icons/fi";
+import { AiOutlinePhone } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
 
 
@@ -71,7 +71,7 @@ function Footer() {
                 </div>
 
                 <div className="flex gap-x-2 items-center justify-start mr-5">
-                    <FiPhone className='text-2xl text-slate-700 dark:text-green-700' />
+                    <AiOutlinePhone className='text-2xl text-slate-700 dark:text-green-700' />
                     <sapn className="text-md text-black dark:text-gray-400">mohsenical.web@gmail.com</sapn>
                 </div>
 
