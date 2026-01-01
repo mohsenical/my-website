@@ -46,7 +46,7 @@ function BlogsSection() {
                                             <p className='text-gray-400 line-clamp-5'>
                                                {article.disc}
                                             </p>
-                                            <button className='w-full md:w-[20%] bg-green-900 p-3 rounded-2xl text-gray-400 hover:text-white transition-all cursor-pointer'>
+                                            <button className='w-full md:w-[20%] bg-slate-700 dark:bg-green-900 p-3 rounded-2xl text-white dark:text-gray-400 hover:text-zinc-400 dark:hover:text-white transition-all cursor-pointer'>
                                                 <a href="/" className=''>خواندن مقاله</a>
                                             </button>
                                         </div>

@@ -4,7 +4,7 @@ import Button from "../../modules/Button/Button"
 function HeaderSection() {
   return (
     <>
-      <div className="flex justify-center h-[45rem] w-full md:px-2 lg:px-15 xl:px-30  bg-white dark:bg-black shadow overflow-hidden">
+      <div className="flex justify-center h-[44rem] w-full md:px-2 lg:px-15 xl:px-30 bg-white dark:bg-black shadow overflow-hidden">
 
         <div
           data-aos="fade-up"
@@ -24,7 +24,7 @@ function HeaderSection() {
           </div>
         </div>
 
-        <div className="hidden md:block  ml-5 justify-center relative items-start md:w-[40%]">
+        <div className="hidden md:block ml-5 justify-center relative items-start md:w-[40%]">
           <img src="/Image/AvatarBackgroundDark.png" className="dark:block absolute bottom-0 ml-15 left-0 w-full h-[80%] max-w-sm mx-auto object-cover object-center" alt="Avatar" />
           <img src="/Image/AvatarBackgroundWhite.png" className="dark:hidden absolute bottom-0 ml-15 left-0 w-full h-[80%] max-w-sm mx-auto object-cover object-center" alt="Avatar" />
         </div>

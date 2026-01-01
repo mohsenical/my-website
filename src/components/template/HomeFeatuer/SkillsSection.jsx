@@ -31,7 +31,7 @@ function SkillsSection() {
                     {
                         boxSkills.map(box => (
                             <div key={box.id}>
-
+                                <BoxSkills {...box} />
                             </div>
                         ))
                     }

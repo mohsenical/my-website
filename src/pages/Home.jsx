@@ -42,10 +42,10 @@ function Home() {
                 </div>
 
 
-                <div>
+                {/* <div>
                     <HeaderSctionBody title="مقالات" desc="جدید ترین های وبلاگ" />
                     <BlogsSection />
-                </div>
+                </div> */}
             </div>
 
             <Footer />

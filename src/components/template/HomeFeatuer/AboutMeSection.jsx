@@ -26,22 +26,22 @@ function AboutMeSection() {
 
                         <div className="grid grid-cols-2 gap-y-4 gap-x-5 justify-between items-center *:flex *:gap-x-1 my-4 w-full ">
                             <div className="">
-                                <TiTick className='text-green-900 text-xl' />
+                                <TiTick className='text-slate-500 dark:text-green-900 text-xl' />
                                 <span className='text-white'>برندینگ و طراحی</span>
                             </div>
 
                             <div className="">
-                                <TiTick className='text-green-900 text-xl' />
+                                <TiTick className='text-slate-500 dark:text-green-900 text-xl' />
                                 <span className='text-white'>طراحی سایت</span>
                             </div>
 
                             <div className="">
-                                <TiTick className='text-green-900 text-xl' />
+                                <TiTick className='text-slate-500 dark:text-green-900 text-xl' />
                                 <span className='text-white'>دیجیتال مارکتینگ</span>
                             </div>
 
                             <div className="">
-                                <TiTick className='text-green-900 text-xl' />
+                                <TiTick className='text-slate-500 dark:text-green-900 text-xl' />
                                 <span className='text-white'>طراحی محصول</span>
                             </div>
 
