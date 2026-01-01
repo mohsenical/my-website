@@ -13,10 +13,11 @@ import { Pagination } from 'swiper/modules';
 
 import { IoMdTime } from "react-icons/io";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import { articlesData } from '../../../Data/data';
 
 function BlogsSection() {
     return (
-        <div className=" h-[screen] pb-5 px-5 md:px-20 w-full ">
+        <div data-aos="zoom-in" className=" h-[screen] pb-5 px-5 md:px-20 w-full ">
 
             <div className='flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[90%] py-4 md:py-5 lg:py-10 bg-white/10 dark:bg-black/50 rounded-2xl overflow-hidden shadow-md'>
                 <Swiper
@@ -26,43 +27,47 @@ function BlogsSection() {
                     modules={[Pagination]}
                     className="mySwiper"
                 >
-                    <SwiperSlide>
-
-                        <div className="flex flex-col lg:flex-row justify-center items-center w-[90%] mx-auto rounded-xl overflow-hidden border border-white/20">
-
-                            <div className="flex flex-col justify-center items-center h-full w-full">
-                                <img src="/Image/Article/Next.webp" alt="Next.js" className='object-contain object-center w-full h-full' />
-                            </div>
 
 
-                            <div className="flex flex-col justify-between items-center w-full h-[20rem] ">
-                                <div className="flex flex-col gap-y-5 w-full h-[100%] p-5">
-                                    <h3 className=''> عنوان: چرا از next استفاده کنیم !؟ </h3>
-                                    <p className='text-gray-400 line-clamp-5'>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta perferendis iste dolore deleniti harum doloribus quisquam? Tempora corrupti, iusto optio fugiat non dolor mollitia aliquid. Quod, facere. Doloribus, id tempora Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sunt iusto explicabo ut quos repellendus nemo ad vero officiis veritatis provident illo eligendi ducimus, non sed, aliquid nostrum voluptatibus atque!
-                                    </p>
-                                    <button className='w-full md:w-[20%] bg-green-900 p-3 rounded-2xl text-gray-400 hover:text-white transition-all cursor-pointer'>
-                                        <a href="/" className=''>خواندن مقاله</a>
-                                    </button>
+                    {
+                        articlesData.map(article => (
+                            <SwiperSlide key={article.id}>
+
+                                <div className="flex flex-col lg:flex-row justify-center items-center w-[90%] mx-auto rounded-xl overflow-hidden border border-white/20">
+
+                                    <div className="flex flex-col justify-center items-center h-full w-full">
+                                        <img src={article.image} alt="Next.js" className='object-contain object-center w-full h-full' />
+                                    </div>
+
+
+                                    <div className="flex flex-col justify-between items-center w-full h-[20rem] ">
+                                        <div className="flex flex-col gap-y-5 w-full h-[100%] p-5">
+                                            <h3 className=''>{article.title}</h3>
+                                            <p className='text-gray-400 line-clamp-5'>
+                                               {article.disc}
+                                            </p>
+                                            <button className='w-full md:w-[20%] bg-green-900 p-3 rounded-2xl text-gray-400 hover:text-white transition-all cursor-pointer'>
+                                                <a href="/" className=''>خواندن مقاله</a>
+                                            </button>
+                                        </div>
+
+                                        <div className="flex gap-x-20 justify-start items-center *:flex *:justify-center *:items-center *:gap-x-1  w-full py-5 px-5">
+                                            <div className="">
+                                                <IoMdTime className='text-xl' />
+                                                <span className='text-md mt-1 text-gray-400'>بدون دیدگاه</span>
+                                            </div>
+                                            <div className="">
+                                                <BiMessageSquareDetail className='text-xl' />
+                                                <span className='text-md mt-1 text-gray-400'>{article.date}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
 
-                                <div className="flex gap-x-20 justify-start items-center *:flex *:justify-center *:items-center *:gap-x-1  w-full py-5 px-5">
-                                    <div className="">
-                                        <IoMdTime className='text-xl' />
-                                        <span className='text-md mt-1 text-gray-400'>بدون دیدگاه</span>
-                                    </div>
-                                    <div className="">
-                                        <BiMessageSquareDetail className='text-xl' />
-                                        <span className='text-md mt-1 text-gray-400'>1404/25/11</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </SwiperSlide>
-
-
+                            </SwiperSlide>
+                        ))
+                    }
 
                 </Swiper>
             </div>
