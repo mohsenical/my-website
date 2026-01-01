@@ -3,7 +3,7 @@ import BoxSkills from '../../modules/BoxSkills/BoxSkills';
 
 function SkillsSection() {
     return (
-        <div className=" h-[screen] pb-15 px-5 md:px-20 w-full ">
+        <div className=" h-[screen] pb-5 px-5 md:px-20 w-full ">
 
 
             <div

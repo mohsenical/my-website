@@ -3,6 +3,7 @@ import HeaderSctionBody from "../components/modules/HeaderSctionBody/HeaderSctio
 import ScrollTopBtn from "../components/modules/ScrollTopBtn/ScrollTopBtn";
 import SocialMedia from "../components/modules/SocialMedia/SocialMedia";
 import AboutMeSection from "../components/template/HomeFeatuer/AboutMeSection";
+import BlogsSection from "../components/template/HomeFeatuer/BlogsSection";
 import ContactMeSection from "../components/template/HomeFeatuer/ContactMeSection";
 import HeaderSection from "../components/template/HomeFeatuer/HeaderSection";
 import ServicesSection from "../components/template/HomeFeatuer/ServicesSection";
@@ -38,6 +39,12 @@ function Home() {
                 <div>
                     <HeaderSctionBody title="تماس با من" desc="ارتباط با من / مشاوره :)" />
                     <ContactMeSection />
+                </div>
+
+
+                <div>
+                    <HeaderSctionBody title="مقالات" desc="جدید ترین های وبلاگ" />
+                    <BlogsSection />
                 </div>
             </div>
 
