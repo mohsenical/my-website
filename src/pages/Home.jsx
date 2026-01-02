@@ -31,7 +31,7 @@ function Home() {
                     <AboutMeSection />
                 </div>
 
-                <div className="">
+                <div>
                     <HeaderSctionBody title="مهارت های من" desc="مهارت ها و تکنولوژی ها" />
                     <SkillsSection />
                 </div>

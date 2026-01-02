@@ -6,13 +6,15 @@ import Contact from "../pages/Contact";
 import Blog from "../pages/Blog"
 import Services from "../pages/Services"
 import NotFound from "../pages/NotFound";
+import Skills from "../pages/Skills.jsx";
 
 
 const router = createBrowserRouter([
     { path: "/", element: <Home /> },
     { path: "/services", element: <Services /> },
-    { path: "/about-me", element: <About /> },
+    { path: "/skills", element: <Skills /> },
     { path: "/contact-me", element: <Contact /> },
+    { path: "/about-me", element: <About /> },
     { path: "/blogs", element: <Blog /> },
     { path: "/*", element: <NotFound /> },
 ])

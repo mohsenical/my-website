@@ -17,9 +17,9 @@ import { DiMongodb } from "react-icons/di";
 const menuItem = [
     { id: 1, title: "معرفی", href: "/" },
     { id: 1, title: "خدمات", href: "/services" },
-    { id: 2, title: "پروژه ها", href: "/projects" },
     { id: 3, title: "مهارت ها", href: "/skills" },
     { id: 4, title: "تماس", href: "/contact-me" },
+    { id: 2, title: "پروژه ها", href: "/projects" },
     { id: 5, title: "مقالات", href: "/blogs" },
 ]
 
