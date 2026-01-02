@@ -4,7 +4,7 @@ import Button from "../../modules/Button/Button"
 function HeaderSection() {
   return (
     <>
-      <div className="flex justify-center h-[44rem] w-full md:px-2 lg:px-15 xl:px-30 bg-white dark:bg-black shadow overflow-hidden">
+      <div className="flex justify-center h-[95vh] w-full md:px-2 lg:px-15 xl:px-30 bg-white dark:bg-black shadow overflow-hidden">
 
         <div
           data-aos="fade-up"

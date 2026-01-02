@@ -71,12 +71,12 @@ function Footer() {
                 </div>
 
                 <div className="flex gap-x-2 items-center justify-start mr-5">
-                    <AiOutlinePhone className='text-2xl text-slate-700 dark:text-green-700' />
+                    <CgMail className='text-2xl text-slate-700 dark:text-green-700' />
                     <sapn className="text-md text-black dark:text-gray-400">mohsenical.web@gmail.com</sapn>
                 </div>
 
                 <div className="flex gap-x-2 items-center justify-start mr-5">
-                    <CgMail className='text-2xl text-slate-700 dark:text-green-700' />
+                    <AiOutlinePhone className='text-2xl text-slate-700 dark:text-green-700' />
                     <sapn className="text-md text-black dark:text-gray-400">0914-545-0730</sapn>
                 </div>
             </div>

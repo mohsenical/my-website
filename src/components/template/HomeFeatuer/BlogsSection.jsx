@@ -41,9 +41,9 @@ function BlogsSection() {
 
 
                                     <div className="flex flex-col justify-between items-center w-full h-[20rem] ">
-                                        <div className="flex flex-col gap-y-5 w-full h-[100%] p-5">
-                                            <h3 className=''>{article.title}</h3>
-                                            <p className='text-gray-400 line-clamp-5'>
+                                        <div className="flex flex-col gap-y-5 w-full h-[75%] p-3">
+                                            <h3 className='text-white text-xl '>{article.title}</h3>
+                                            <p className='text-gray-400 line-clamp-5 mb-0'>
                                                {article.disc}
                                             </p>
                                             <button className='w-full md:w-[20%] bg-slate-700 dark:bg-green-900 p-3 rounded-2xl text-white dark:text-gray-400 hover:text-zinc-400 dark:hover:text-white transition-all cursor-pointer'>
@@ -51,13 +51,13 @@ function BlogsSection() {
                                             </button>
                                         </div>
 
-                                        <div className="flex gap-x-20 justify-start items-center *:flex *:justify-center *:items-center *:gap-x-1  w-full py-5 px-5">
+                                        <div className="flex gap-x-20 justify-start items-center *:flex *:justify-center *:items-center *:gap-x-2 h-[15%] w-full py-5 px-5">
                                             <div className="">
-                                                <IoMdTime className='text-xl' />
+                                                <IoMdTime className='text-white text-xl' />
                                                 <span className='text-md mt-1 text-gray-400'>بدون دیدگاه</span>
                                             </div>
                                             <div className="">
-                                                <BiMessageSquareDetail className='text-xl' />
+                                                <BiMessageSquareDetail className='text-white text-xl' />
                                                 <span className='text-md mt-1 text-gray-400'>{article.date}</span>
                                             </div>
                                         </div>
