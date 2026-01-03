@@ -29,11 +29,13 @@ function SideBar({ sideBarClose }) {
                     </div>
                 </div>
 
-                <div className="flex flex-col mt-5 gap-y-3 pb-5 border-b border-b-zinc-300">
+                <div className="flex flex-col mt-5 gap-y-3 pb-5 border-b border-b-zinc-300 text-md">
 
                     {sideBarItems.map(item => (
                         <div key={item.id} className="flex items-center justify-start w-30 gap-2 p-2 dark:text-gray-200 text-zinc-900">
-                            {item.icon}
+                            <div className="text-slate-500 dark:text-green-900">
+                                 {item.icon}
+                            </div>
                             <Link to={item.href} onClick={sideBarClose}>{item.title}</Link>
                         </div>
                     ))}
@@ -41,7 +43,7 @@ function SideBar({ sideBarClose }) {
 
                 </div>
 
-                <div className='flex flex-col gap-y-5 text-xl mt-5 transition-all ' >
+                <div className='flex flex-col gap-y-8 text-xl mt-5 transition-all ' >
                     <div className="w-7 p-1">
                         {
                             !isDark ? (<FaMoon className='text-black/50' onClick={toogleDarkMode} />) : (<FaSun className='text-yellow-600' onClick={toogleDarkMode} />)
