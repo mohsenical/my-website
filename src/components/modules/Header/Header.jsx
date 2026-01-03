@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import useDarkMode from "../../../Hoocs/useDarkMode";
-import { Link } from "react-router";
+import useTopbarFixed from "../../../Hoocs/useTopbarFixed";
+import clsx from "clsx";
+
+import { menuItem } from "../../../Data/menuData"
 
 import Berger from "../Berger/Berger";
 import SideBar from "../SideBar/SideBar";
-import { menuItem } from "../../../Data/data"
+import { FaSun, FaMoon } from "react-icons/fa";
 
-import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram, FaLinkedin } from "react-icons/fa";
-import clsx from "clsx";
-import useTopbarFixed from "../../../Hoocs/useTopbarFixed";
 
 function Header() {
 

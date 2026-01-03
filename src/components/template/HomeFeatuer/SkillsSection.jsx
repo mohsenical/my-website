@@ -1,4 +1,4 @@
-import { boxSkills } from '../../../Data/data';
+import { skillsData } from '../../../Data/skillsData';
 import BoxSkills from '../../modules/BoxSkills/BoxSkills';
 
 function SkillsSection() {
@@ -29,7 +29,7 @@ function SkillsSection() {
                 <div className="grid gap-x-2 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-2 xl:gap-y-5 w-[90%] lg:w-[65%] mx-5">
 
                     {
-                        boxSkills.map(box => (
+                        skillsData.map(box => (
                             <div key={box.id}>
                                 <BoxSkills {...box} />
                             </div>

@@ -1,10 +1,11 @@
 import useDarkMode from "../../../Hoocs/useDarkMode";
-import { IoClose } from "react-icons/io5";
 
+import { sideBarItems } from "../../../Data/menuData";
+
+import { IoClose } from "react-icons/io5";
 import { LiaWhatsapp } from "react-icons/lia";
 import { LiaLinkedin } from "react-icons/lia";
-import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { sideBarItems } from "../../../Data/data";
+import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram } from "react-icons/fa";
 
 
 

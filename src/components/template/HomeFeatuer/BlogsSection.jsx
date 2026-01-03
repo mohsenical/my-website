@@ -8,12 +8,13 @@ import 'swiper/css/pagination';
 import '../../../style/swiper.css';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Autoplay ,Pagination } from 'swiper/modules';
 
 
 import { IoMdTime } from "react-icons/io";
 import { BiMessageSquareDetail } from "react-icons/bi";
-import { articlesData } from '../../../Data/data';
+
+import { articlesData } from '../../../Data/articlesData';
 
 function BlogsSection() {
     return (
@@ -21,10 +22,13 @@ function BlogsSection() {
 
             <div className='flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[90%] py-4 md:py-5 lg:py-10 bg-white/10 dark:bg-black/50 rounded-2xl overflow-hidden shadow-md'>
                 <Swiper
+                    rewind={true}
+                    loop={true}
+                    autoplay={{ delay: 1500 }}
                     pagination={{
                         dynamicBullets: true,
                     }}
-                    modules={[Pagination]}
+                    modules={[Pagination, Autoplay]}
                     className="mySwiper"
                 >
 
@@ -44,7 +48,7 @@ function BlogsSection() {
                                         <div className="flex flex-col gap-y-5 w-full h-[75%] p-3">
                                             <h3 className='text-white text-xl '>{article.title}</h3>
                                             <p className='text-gray-400 line-clamp-5 mb-0'>
-                                               {article.disc}
+                                                {article.disc}
                                             </p>
                                             <button className='w-full md:w-[20%] bg-slate-700 dark:bg-green-900 p-3 rounded-2xl text-white dark:text-gray-400 hover:text-zinc-400 dark:hover:text-white transition-all cursor-pointer'>
                                                 <a href="/" className=''>خواندن مقاله</a>

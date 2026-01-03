@@ -27,7 +27,7 @@ function Home() {
                 </div>
 
                 <div>
-                    <HeaderSctionBody title="درباره من" desc="خلاصه ای از رزمه من" />
+                    <HeaderSctionBody title="درباره من" desc="خلاصه ای از رزومه من" />
                     <AboutMeSection />
                 </div>
 
