@@ -3,6 +3,8 @@ import React from 'react'
 import { IoLocationSharp } from "react-icons/io5";
 import { AiOutlinePhone } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
+import { menuItem } from '../../../Data/menuData';
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -22,43 +24,19 @@ function Footer() {
             <div className="flex flex-col gap-y-4 py-4 px-5 w-[90%] mb-5 md:w-[30%] h-full">
                 <h2 className='text-xl dark:text-white/80 text-gray-900 danpm run devrk:text-white '>لینک های سریع</h2>
 
-                <ul className=' flex flex-col gap-y-4 *:dark:text-gray-400 *:text-black mr-4'>
-                    <li className=''>
-                        <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
-                            <a>معرفی</a>
-                        </div>
-                    </li>
-                    <li className=''>
-                        <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
-                            <a>خدمات</a>
-                        </div>
-                    </li>
-                    <li className=''>
-                        <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
-                            <a>پروژه ها</a>
-                        </div>
-                    </li>
-                    <li className=''>
-                        <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
-                            <a>مهارت ها</a>
-                        </div>
-                    </li>
-                    <li className=''>
-                        <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
-                            <a>تماس</a>
-                        </div>
-                    </li>
-                    <li className=''>
-                        <div className="flex justify-start items-center gap-x-2">
-                            <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
-                            <a>مقالات</a>
-                        </div>
-                    </li>
+                <ul className=' flex flex-col gap-y-4 mr-4 *:dark:text-gray-400 *:text-black *:hover:dark:text-white *:hover:text-gray-400 *:transition-all'>
+
+                    {
+                        menuItem.map(menu => (
+                            <li key={menu.id} className=''>
+                                <div className="flex justify-start items-center gap-x-2">
+                                    <div className='w-[5px] h-[5px] bg-slate-700 dark:bg-green-900 rounded-full'></div>
+                                    <Link to={menu.href}>{menu.title}</Link>
+                                </div>
+                            </li>
+                        ))
+                    }
+
                 </ul>
             </div>
 

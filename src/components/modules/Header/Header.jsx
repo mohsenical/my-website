@@ -8,6 +8,7 @@ import { menuItem } from "../../../Data/menuData"
 import Berger from "../Berger/Berger";
 import SideBar from "../SideBar/SideBar";
 import { FaSun, FaMoon } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -37,7 +38,7 @@ function Header() {
 
                                 {menuItem.map(menu => (
                                     <li key={menu.id}>
-                                        <a href={menu.href}>{menu.title}</a>
+                                        <Link to={menu.href}>{menu.title}</Link>
                                     </li>
                                 ))}
 

@@ -6,6 +6,7 @@ import { IoClose } from "react-icons/io5";
 import { LiaWhatsapp } from "react-icons/lia";
 import { LiaLinkedin } from "react-icons/lia";
 import { FaSun, FaMoon, FaGithub, FaTelegram, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 
@@ -33,7 +34,7 @@ function SideBar({ sideBarClose }) {
                     {sideBarItems.map(item => (
                         <div key={item.id} className="flex items-center justify-start w-30 gap-2 p-2 dark:text-gray-200 text-zinc-900">
                             {item.icon}
-                            <a href={item.href}>{item.title}</a>
+                            <Link to={item.href} onClick={sideBarClose}>{item.title}</Link>
                         </div>
                     ))}
 
