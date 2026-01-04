@@ -1,5 +1,5 @@
 import { ReactTyped } from "react-typed"
-import Button from "../../modules/Button/Button"
+import Button from "../modules/Button/Button"
 
 
 function HeaderSection() {

@@ -1,5 +1,5 @@
-import BoxItem from '../../modules/BoxItem/BoxItem'
-import { servicesData } from "../../../Data/servicesData"
+import BoxItem from '../modules/BoxItem/BoxItem'
+import { servicesData } from "../../Data/servicesData"
 
 function ServicesSection() {
     return (

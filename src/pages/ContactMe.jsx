@@ -1,6 +1,6 @@
 import Breadcrumb from '../components/modules/Breadcrumb/Breadcrumb'
 import HeaderSctionBody from '../components/modules/HeaderSctionBody/HeaderSctionBody'
-import ContactMeSection from '../components/template/HomeFeatuer/ContactMeSection'
+import ContactMeSection from '../components/template/ContactMeSection'
 import ScrollTopBtn from '../components/modules/ScrollTopBtn/ScrollTopBtn'
 
 function ContactMe() {

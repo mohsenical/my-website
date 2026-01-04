@@ -1,6 +1,6 @@
 import Breadcrumb from '../components/modules/Breadcrumb/Breadcrumb'
 import HeaderSctionBody from '../components/modules/HeaderSctionBody/HeaderSctionBody'
-import BlogsSection from '../components/template/HomeFeatuer/BlogsSection'
+import BlogsSection from '../components/template/BlogsSection'
 import ScrollTopBtn from '../components/modules/ScrollTopBtn/ScrollTopBtn'
 
 function Blog() {

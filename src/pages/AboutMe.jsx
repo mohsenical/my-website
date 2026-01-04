@@ -1,5 +1,5 @@
 import HeaderSctionBody from '../components/modules/HeaderSctionBody/HeaderSctionBody'
-import AboutMeSection from '../components/template/HomeFeatuer/AboutMeSection'
+import AboutMeSection from '../components/template/AboutMeSection'
 import ScrollTopBtn from '../components/modules/ScrollTopBtn/ScrollTopBtn'
 import Breadcrumb from "../components/modules/Breadcrumb/Breadcrumb"
 

@@ -1,5 +1,5 @@
-import { skillsData } from '../../../Data/skillsData';
-import BoxSkills from '../../modules/BoxSkills/BoxSkills';
+import { skillsData } from '../../Data/skillsData';
+import BoxSkills from '../modules/BoxSkills/BoxSkills';
 
 function SkillsSection() {
     return (

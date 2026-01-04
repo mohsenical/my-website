@@ -1,14 +1,15 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import clsx from "clsx";
+
 import useDarkMode from "../../../Hoocs/useDarkMode";
 import useTopbarFixed from "../../../Hoocs/useTopbarFixed";
-import clsx from "clsx";
+import SideBar from "../SideBar/SideBar";
+import Berger from "../Berger/Berger";
 
 import { menuItem } from "../../../Data/menuData"
 
-import Berger from "../Berger/Berger";
-import SideBar from "../SideBar/SideBar";
 import { FaSun, FaMoon } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -54,24 +55,24 @@ function Header() {
 
                             <span className="w-[2px] h-7 bg-zinc-900/50 dark:bg-gray-200/50"></span>
 
-                            <a href="/" className='flex items-center gap-x-0.5 justify-center h-full cursor-pointer'>
+                            <Link to="/" className='flex items-center gap-x-0.5 justify-center h-full cursor-pointer'>
                                 <span className='mt-2 text-gray-900 hover:text-zinc-500 dark:text-zinc-400 dark:hover:text-white transition-colors  text-xl lg:text-2xl'>Mohsenical</span>
                                 <img className='size-6 lg:size-8 bg-cover' src='/Image/Logo.png' alt='Avatar' />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </header>
 
             {/* Header Mobile Responsive */}
-            <div className="flex fixed inset-0 items-center md:hidden justify-between w-full h-22 py-5 px-5 dark:bg-black bg-gray-200 z-50">
+            <header className={clsx("flex fixed inset-0 items-center md:hidden justify-between w-full h-22 py-5 px-5 dark:bg-black bg-gray-200 z-50 transition-all", fixTop ? "dark:bg-black/50 bg-white/50 backdrop-blur-xl" : "")}>
                 <Berger sideBarOpen={sideBarOpen} />
 
                 <div className='flex items-center justify-center gap-x-3 h-full'>
                     <span className='dark:text-zinc-300 text-zinc-900 text-2xl mt-1.5'>Mohsen Peighami</span>
                     <img className='size-15 bg-cover rounded-full' src='/Image/Avatar.jpg' alt='Avatar' />
                 </div>
-            </div>
+            </header>
 
             {
                 sideBar && (<SideBar sideBarClose={sideBarClose} />)

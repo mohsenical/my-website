@@ -1,5 +1,5 @@
 import { SiTicktick } from "react-icons/si";
-import Form from "../../modules/Form/Form";
+import Form from "../modules/Form/Form";
 
 function ContactMeSection() {
     return (

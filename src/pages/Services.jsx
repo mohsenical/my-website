@@ -1,6 +1,6 @@
 import Breadcrumb from '../components/modules/Breadcrumb/Breadcrumb'
 import HeaderSctionBody from '../components/modules/HeaderSctionBody/HeaderSctionBody'
-import ServicesSection from '../components/template/HomeFeatuer/ServicesSection'
+import ServicesSection from '../components/template/ServicesSection'
 import ScrollTopBtn from '../components/modules/ScrollTopBtn/ScrollTopBtn'
 
 function Services() {

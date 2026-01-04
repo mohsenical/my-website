@@ -1,8 +1,9 @@
-import Form from '../../modules/Form/Form'
+import Form from '../modules/Form/Form'
 
 import { TiTick } from "react-icons/ti";
 import { AiOutlinePhone } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
+import aboutData from '../../Data/aboutmeData';
 
 
 function AboutMeSection() {
@@ -25,25 +26,15 @@ function AboutMeSection() {
                         </p>
 
                         <div className="grid grid-cols-2 gap-y-4 gap-x-5 justify-between items-center *:flex *:gap-x-1 my-4 w-full ">
-                            <div className="">
-                                <TiTick className='text-slate-500 dark:text-green-900 text-xl' />
-                                <span className='text-white'>برندینگ و طراحی</span>
-                            </div>
 
-                            <div className="">
-                                <TiTick className='text-slate-500 dark:text-green-900 text-xl' />
-                                <span className='text-white'>طراحی سایت</span>
-                            </div>
-
-                            <div className="">
-                                <TiTick className='text-slate-500 dark:text-green-900 text-xl' />
-                                <span className='text-white'>دیجیتال مارکتینگ</span>
-                            </div>
-
-                            <div className="">
-                                <TiTick className='text-slate-500 dark:text-green-900 text-xl' />
-                                <span className='text-white'>طراحی محصول</span>
-                            </div>
+                            {
+                                aboutData.map(data => (
+                                    <div key={data.id}>
+                                        <TiTick className='text-slate-500 dark:text-green-900 text-xl' />
+                                        <span className='text-white'>{data.title}</span>
+                                    </div>
+                                ))
+                            }
 
                         </div>
 
@@ -70,7 +61,7 @@ function AboutMeSection() {
                     </div>
                 </div>
 
-                <div className="w-[95%] lg:w-[90%] xl:w-[40%] mx-5 rounded-xl overflow-hidden">
+                <div className="w-[95%] lg:w-[90%]  xl:w-[40%] mx-5 rounded-xl overflow-hidden">
                     <img src="/Image/AboutAvatar.jpg" className=" mx-auto object-contain object-fill" alt="Avatar" />
                 </div>
             </div>

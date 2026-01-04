@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import '../../../style/swiper.css';
+import '../../style/swiper.css';
 
 // import required modules
 import { Autoplay ,Pagination } from 'swiper/modules';
@@ -14,7 +14,7 @@ import { Autoplay ,Pagination } from 'swiper/modules';
 import { IoMdTime } from "react-icons/io";
 import { BiMessageSquareDetail } from "react-icons/bi";
 
-import { articlesData } from '../../../Data/articlesData';
+import { articlesData } from '../../Data/articlesData';
 
 function BlogsSection() {
     return (

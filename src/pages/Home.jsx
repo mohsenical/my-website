@@ -1,12 +1,12 @@
 import HeaderSctionBody from "../components/modules/HeaderSctionBody/HeaderSctionBody";
 import ScrollTopBtn from "../components/modules/ScrollTopBtn/ScrollTopBtn";
 import SocialMedia from "../components/modules/SocialMedia/SocialMedia";
-import AboutMeSection from "../components/template/HomeFeatuer/AboutMeSection";
-import BlogsSection from "../components/template/HomeFeatuer/BlogsSection";
-import ContactMeSection from "../components/template/HomeFeatuer/ContactMeSection";
-import HeaderSection from "../components/template/HomeFeatuer/HeaderSection";
-import ServicesSection from "../components/template/HomeFeatuer/ServicesSection";
-import SkillsSection from "../components/template/HomeFeatuer/SkillsSection";
+import AboutMeSection from "../components/template/AboutMeSection";
+import BlogsSection from "../components/template/BlogsSection";
+import ContactMeSection from "../components/template/ContactMeSection";
+import HeaderSection from "../components/template/HeaderSection";
+import ServicesSection from "../components/template/ServicesSection";
+import SkillsSection from "../components/template/SkillsSection";
 
 
 
