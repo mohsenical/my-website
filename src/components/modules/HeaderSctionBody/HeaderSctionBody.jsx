@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function HeaderSctionBody({ title, desc, button, btnHref }) {
+function HeaderSctionBody({ title, desc, button }) {
     return (
         <div className=" flex items-center justify-between p-2 mx-5  xl:mx-10 md:px-15 mb-3 md:mb-8 my-10 rounded-2xl">
             <div data-aos="fade-up-left" className=" flex flex-col gap-y-0 md:gap-y-1 border-r-2 border-sky-700 dark:border-green-700 px-2 md:px-5">
@@ -10,9 +11,9 @@ function HeaderSctionBody({ title, desc, button, btnHref }) {
 
             {button ? (
                 <div data-aos="fade-up-right" className="*:flex *:justify-center *:items-center *:px-2 *:py-3 md:*:py-3 *:bg-sky-900 dark:*:bg-green-700 *:text-white dark:*:text-zinc-400 *:rounded-xl *:hover:text-gray-300 *:transition-colors *:cursor-pointer">
-                    <a href={`/${btnHref}`} className="text-sm lg:text-xl">
+                    <Link to="/contact-me" className="text-sm lg:text-xl">
                         {button}
-                    </a>
+                    </Link>
                 </div>
             ) : null}
         </div>

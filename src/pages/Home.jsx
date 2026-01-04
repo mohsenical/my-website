@@ -21,7 +21,7 @@ function Home() {
             <div className="flex flex-col *:w-full">
 
                 <div>
-                    <HeaderSctionBody title="خدمات" desc="کار هایی که انجام میدهم" button="دریافت مشاوره رایگان" btnHref="/" />
+                    <HeaderSctionBody title="خدمات" desc="کار هایی که انجام میدهم" button="دریافت مشاوره رایگان" />
                     <ServicesSection />
                 </div>
 
