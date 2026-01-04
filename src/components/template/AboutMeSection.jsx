@@ -8,7 +8,7 @@ import aboutData from '../../Data/aboutmeData';
 
 function AboutMeSection() {
     return (
-        <div className=" h-[screen] md:pb-15 px-5 md:px-24 w-full ">
+        <div className=" h-[screen] pb-5 px-5 md:px-24 w-full ">
             <div
                 data-aos="zoom-in"
                 className="flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-1 md:gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[90%] py-5 bg-white/10 dark:bg-black/50 rounded-2xl overflow-hidden shadow-md"
