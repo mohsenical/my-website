@@ -48,7 +48,7 @@ function Form() {
                 </div>
             </div>
 
-            <button className="h-10 rounded-xl text-lg mt-2 text-white dark:text-gray-400 bg-slate-600 dark:bg-green-900  dark:hover:bg-green-900 border-3 md:border hover:border-3 border-slate-800 md:border-white/40 hover:border-slate-800 dark:hover:border-green-950 cursor-pointer transition-all">ارسال</button>
+            <button className="h-10 rounded-xl text-lg mt-2 text-white dark:text-gray-400 bg-slate-600 dark:bg-green-900  dark:hover:bg-green-900 border hover:border-1 border-slate-800 md:border-white/40 hover:border-slate-800 dark:hover:border-[#8eff3f] cursor-pointer transition-all">ارسال</button>
         </form>
     )
 }
