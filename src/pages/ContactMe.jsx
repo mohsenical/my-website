@@ -3,6 +3,7 @@ import HeaderSctionBody from '../components/modules/HeaderSctionBody/HeaderSctio
 import ContactMeSection from '../components/template/ContactMeSection'
 import ScrollTopBtn from '../components/modules/ScrollTopBtn/ScrollTopBtn'
 import ContactMeBox from '../components/modules/ContactMeBox/ContactMeBox';
+import socialMediaData from '../Data/socialMediaData';
 
 function ContactMe() {
   return (
@@ -19,10 +20,15 @@ function ContactMe() {
             data-aos="zoom-in"
             className="w-[90%] grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto gap-1 overflow-hidden"
           >
-            <ContactMeBox />
-            <ContactMeBox />
-            <ContactMeBox />
-            <ContactMeBox />
+
+            {
+              socialMediaData.map(data => (
+                <div key={data.id}>
+                  <ContactMeBox {...data} />
+                </div>
+              ))
+            }
+
           </div>
         </div>
 
