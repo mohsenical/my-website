@@ -17,7 +17,7 @@ function Accordion({ title, content }) {
                 <FiChevronUp className={`text-white text-xl transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
             </div>
 
-            <div className={` border-r-2 border-r-slate-500 dark:border-r-green-900 pr-2 text-gray-300 mt-5 text-lg leading-8 text-right transition-all duration-300 overflow-hidden ${open ? " opacity-100" : "max-h-0 opacity-0"}`}>
+            <div className={` border-r-2 border-r-slate-500 dark:border-r-green-900 pr-2 text-gray-300 mt-5  text-lg leading-8 text-right transition-all duration-300 overflow-hidden ${open ? " opacity-100" : "max-h-0 opacity-0"}`}>
                 {content}
             </div>
 

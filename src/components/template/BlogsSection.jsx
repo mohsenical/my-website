@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import '../../style/swiper.css';
 
 // import required modules
-import { Autoplay ,Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 
 import { IoMdTime } from "react-icons/io";
@@ -18,9 +18,13 @@ import { articlesData } from '../../Data/articlesData';
 
 function BlogsSection() {
     return (
-        <div data-aos="zoom-in" className=" h-[screen] pb-5 px-5 md:px-20 w-full ">
+        <div
+            data-aos="zoom-in"
+            className=" h-[screen] pb-5 px-5 md:px-20 w-full ">
 
-            <div className='flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[90%] py-4 md:py-5 lg:py-10 bg-white/10 dark:bg-black/50 rounded-2xl overflow-hidden shadow-md'>
+            <div
+                className='flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[90%] py-4 md:py-5 lg:py-10 bg-white/10 dark:bg-black/50 rounded-2xl overflow-hidden shadow-md'
+                >
                 <Swiper
                     rewind={true}
                     loop={true}
@@ -34,7 +38,7 @@ function BlogsSection() {
 
 
                     {
-                        articlesData.map(article => (
+                        articlesData.slice(0,3).map(article => (
                             <SwiperSlide key={article.id}>
 
                                 <div className="flex flex-col lg:flex-row justify-center items-center w-[90%] mx-auto rounded-xl overflow-hidden border border-white/20">
