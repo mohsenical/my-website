@@ -11,19 +11,18 @@ import SkillsSection from "../components/template/SkillsSection";
 
 
 function Home() {
-    console.log("home ");
 
     return (
         <>
-            <HeaderSection />
             <SocialMedia />
+            <HeaderSection />
 
             <div className="flex flex-col *:w-full">
-
                 <div>
                     <HeaderSctionBody title="خدمات" desc="کار هایی که انجام میدهم" button="دریافت مشاوره رایگان" />
                     <ServicesSection />
                 </div>
+
 
                 <div>
                     <HeaderSctionBody title="درباره من" desc="خلاصه ای از رزومه من" />
@@ -45,6 +44,8 @@ function Home() {
                     <HeaderSctionBody title="مقالات" desc="جدید ترین های وبلاگ" />
                     <BlogsSection />
                 </div>
+
+
             </div>
             <ScrollTopBtn />
         </>

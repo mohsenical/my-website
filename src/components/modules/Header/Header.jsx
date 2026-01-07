@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import clsx from "clsx";
 
 import useDarkMode from "../../../Hoocs/useDarkMode";
@@ -39,7 +39,7 @@ function Header() {
 
                                 {menuItem.map(menu => (
                                     <li key={menu.id}>
-                                        <Link to={menu.href}>{menu.title}</Link>
+                                        <NavLink className={clsx(() => console.log(true))} to={menu.href}>{menu.title}</NavLink>
                                     </li>
                                 ))}
 
@@ -65,8 +65,10 @@ function Header() {
             </header>
 
             {/* Header Mobile Responsive */}
-            <header className={clsx("flex fixed inset-0 items-center md:hidden justify-between w-full h-22 py-5 px-5 dark:bg-black bg-gray-200 z-50 transition-all", fixTop ? "dark:bg-black/50 bg-white/50 backdrop-blur-xl" : "")}>
-                <Berger sideBarOpen={sideBarOpen} />
+            <header className={clsx("flex fixed inset-0 items-center md:hidden justify-between w-full h-22 py-5 px-5 dark:bg-black bg-gray-200 z-50 transition-all")}>
+                <div className="">
+                    <Berger sideBarOpen={sideBarOpen} />
+                </div>
 
                 <div className='flex items-center justify-center gap-x-3 h-full'>
                     <span className='dark:text-zinc-300 text-zinc-900 text-2xl mt-1.5'>Mohsen Peighami</span>

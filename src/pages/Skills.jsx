@@ -1,6 +1,7 @@
 import Breadcrumb from "../components/modules/Breadcrumb/Breadcrumb"
 import HeaderSctionBody from "../components/modules/HeaderSctionBody/HeaderSctionBody"
 import ScrollTopBtn from "../components/modules/ScrollTopBtn/ScrollTopBtn"
+import BlogsSection from "../components/template/BlogsSection"
 import SkillsSection from "../components/template/SkillsSection"
 
 

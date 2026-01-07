@@ -17,7 +17,7 @@ function Blog() {
 
                 <div className=" h-[screen] pb-5 px-5 md:px-20 w-full ">
                     <div
-                        // data-aos="zoom-in"
+                        data-aos="zoom-in"
                         className="grid grid-cols-1 xl:grid-cols-3 gap-x-2 md:gap-x-5 gap-y-5 mx-auto w-[95%] md:w-[90%] bg-white/10 dark:bg-black/50 rounded-2xl overflow-hidden shadow-md p-5"
                     >
 
@@ -32,10 +32,6 @@ function Blog() {
                     </div>
                 </div>
 
-                    <HeaderIntro disc="جدید ترین ها وبلاگ" title="آخرین مقالات" />
-
-
-                <BlogsSection />
             </div>
 
             <ScrollTopBtn />

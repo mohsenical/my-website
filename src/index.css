@@ -52,7 +52,10 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-body {
-    font-family: "Dana DemiBold";
+html {
 }
 
+body {
+    font-family: "Dana DemiBold";
+
+}

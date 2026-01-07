@@ -4,12 +4,12 @@ import { IoLocationSharp } from "react-icons/io5";
 import { AiOutlinePhone } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
 import { menuItem } from '../../../Data/menuData';
-import { Link } from 'react-router-dom';
+import { Link, Links } from 'react-router-dom';
 
 
 function Footer() {
     return (
-        <div className='flex flex-col md:flex-row items-center justify-center md:justify-start md:items-start w-full mt-10 py-5 px-5 bg-white dark:bg-black text-white'>
+        <div className='flex flex-col md:flex-row items-center justify-center  md:items-start w-full mt-10 py-5  bg-white dark:bg-black text-white'>
 
             <div className="flex flex-col gap-y-4 py-4 px-5 w-[90%] mb-5 md:w-[30%] h-full">
                 <div className="">
@@ -19,6 +19,19 @@ function Footer() {
                 <p className='w-full md:w-[90%] dark:text-gray-400 text-black mr-5'>
                     راه‌حل‌های حرفه‌ای برای محصولات، فراتر از معرفی ویژگی‌های ساده، مستقیماً بر حل چالش‌های پیچیده کسب‌وکارها متمرکز هستند. این راه‌حل‌ها با قابلیت یکپارچه‌سازی بدون دردسر با سیستم‌های موجود و مقیاس‌پذیری همراه با رشد کسب‌وکار، طراحی شده‌اند.
                 </p>
+
+                <div className=" flex items-start gap-x-3 w-full mt-2">
+                    <button className='py-2 px-4 w-25 rounded-xl bg-slate-500 dark:bg-green-900  text-white dark:text-gray-400 hover:text-zinc-400 dark:hover:text-white transition-all text-lg cursor-pointer'>
+                        <Link to="/about-me">
+                            درباره من
+                        </Link>
+                    </button>
+                    <button className='py-2 px-4 w-25 rounded-xl bg-slate-500 dark:bg-green-900  text-white dark:text-gray-400 hover:text-zinc-400 dark:hover:text-white transition-all text-lg cursor-pointer'>
+                        <Link to="/contact-me">
+                            تماس
+                        </Link>
+                    </button>
+                </div>
             </div>
 
             <div className="flex flex-col gap-y-4 py-4 px-5 w-[90%] mb-5 md:w-[30%] h-full">

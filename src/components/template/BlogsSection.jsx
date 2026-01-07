@@ -15,16 +15,17 @@ import { IoMdTime } from "react-icons/io";
 import { BiMessageSquareDetail } from "react-icons/bi";
 
 import { articlesData } from '../../Data/articlesData';
+import { Link } from 'react-router-dom';
 
 function BlogsSection() {
     return (
         <div
-            data-aos="zoom-in"
-            className=" h-[screen] pb-5 px-5 md:px-20 w-full ">
+            data-aos="fade-up"
+            className=" h-[screen] pb-5 px-5 md:px-24 w-full ">
 
             <div
                 className='flex flex-col xl:flex-row gap-x-0 md:gap-x-5 gap-y-5 justify-center items-center mx-auto w-[95%] md:w-[90%] py-4 md:py-5 lg:py-10 bg-white/10 dark:bg-black/50 rounded-2xl overflow-hidden shadow-md'
-                >
+            >
                 <Swiper
                     rewind={true}
                     loop={true}
@@ -38,9 +39,8 @@ function BlogsSection() {
 
 
                     {
-                        articlesData.slice(0,3).map(article => (
+                        articlesData.slice(0, 3).map(article => (
                             <SwiperSlide key={article.id}>
-
                                 <div className="flex flex-col lg:flex-row justify-center items-center w-[90%] mx-auto rounded-xl overflow-hidden border border-white/20">
 
                                     <div className="flex flex-col justify-center items-center h-full w-full">
@@ -54,8 +54,9 @@ function BlogsSection() {
                                             <p className='text-gray-400 line-clamp-5 mb-0'>
                                                 {article.disc}
                                             </p>
+
                                             <button className='w-full md:w-[20%] bg-slate-700 dark:bg-green-900 p-3 rounded-2xl text-white dark:text-gray-400 hover:text-zinc-400 dark:hover:text-white transition-all cursor-pointer'>
-                                                <a href="/" className=''>خواندن مقاله</a>
+                                                <Link to={`blogs/${article.id}`} className=''>خواندن مقاله</Link>
                                             </button>
                                         </div>
 
