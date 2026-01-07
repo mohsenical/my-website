@@ -14,7 +14,7 @@ function Articles({ id, title, disc, image }) {
 
                 <div className="flex my-2">
                     <Link to={`/blogs/${id}`}>
-                        <button className="bg-green-900 py-2 px-4 rounded-xl text-gray-400 hover:text-white transition-all cursor-pointer">بیشتر بخوانید ...</button>
+                        <button className="bg-slate-700 dark:bg-green-900 py-2 px-4 rounded-xl text-white dark:text-gray-400 hover:text-zinc-400 dark:hover:text-white transition-all cursor-pointer">بیشتر بخوانید ...</button>
                     </Link>
                 </div>
 

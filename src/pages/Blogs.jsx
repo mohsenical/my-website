@@ -5,6 +5,7 @@ import ScrollTopBtn from '../components/modules/ScrollTopBtn/ScrollTopBtn'
 import Articles from '../components/modules/Articles/Articles'
 import { articlesData } from '../Data/articlesData'
 import React from 'react'
+import HeaderIntro from '../components/modules/HeaderIntro/HeaderIntro'
 
 function Blog() {
     return (
@@ -12,7 +13,7 @@ function Blog() {
             <Breadcrumb title="مقالات" />
 
             <div>
-                <HeaderSctionBody title="مقالات" desc="جدید ترین های وبلاگ" />
+                <HeaderSctionBody title="مقالات" desc="همه مقالات سایت" />
 
                 <div className=" h-[screen] pb-5 px-5 md:px-20 w-full ">
                     <div
@@ -30,6 +31,8 @@ function Blog() {
 
                     </div>
                 </div>
+
+                    <HeaderIntro disc="جدید ترین ها وبلاگ" title="آخرین مقالات" />
 
 
                 <BlogsSection />
