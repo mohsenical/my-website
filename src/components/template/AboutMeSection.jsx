@@ -15,11 +15,11 @@ function AboutMeSection() {
             >
 
                 <div className="w-[90%] lg:w-[90%] xl:w-[60%] mx-5">
-                    <div className="w-full flex flex-col gap-y-2 justify-center items-start">
+                    <div className="w-full flex flex-col gap-y-4 justify-center items-start">
 
-                        <p className='text-zinc-300 dark:text-gray-400'>درباره من</p>
+                        <p className='text-zinc-300 text-lg dark:text-gray-400'>درباره من</p>
 
-                        <h2 className='text-white text-2xl mb-4'> <span className='text-slate-500 dark:text-green-900'>راه حل های حرفه ای</span> برای محصولات</h2>
+                        <h2 className='text-white text-2xl mb-4'> <span className='text-slate-500 dark:text-green-900'> توسعه دهنده </span> وب اپلیکیشن ها </h2>
 
                         <p className='text-zinc-300 dark:text-gray-400 text-md'>
                             راه‌حل‌های حرفه‌ای برای محصولات، فراتر از معرفی ویژگی‌های ساده، مستقیماً بر حل چالش‌های پیچیده کسب‌وکارها متمرکز هستند. این راه‌حل‌ها با قابلیت یکپارچه‌سازی بدون دردسر با سیستم‌های موجود و مقیاس‌پذیری همراه با رشد کسب‌وکار، طراحی شده‌اند. علاوه بر این، ارائه پشتیبانی تخصصی، مشاوره مستمر و خدمات آموزشی، تضمین می‌کند که مشتریان بتوانند حداکثر بازدهی و ارزش را از محصول دریافت کنند.

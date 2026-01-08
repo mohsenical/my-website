@@ -4,7 +4,6 @@ import ScrollTopBtn from '../components/modules/ScrollTopBtn/ScrollTopBtn'
 import Breadcrumb from "../components/modules/Breadcrumb/Breadcrumb"
 import BoxSkills from '../components/modules/BoxSkills/BoxSkills'
 import { skillsData } from '../Data/skillsData'
-import HeaderIntro from '../components/modules/HeaderIntro/HeaderIntro'
 
 function AboutMe() {
     return (
@@ -17,7 +16,8 @@ function AboutMe() {
 
                     <AboutMeSection />
 
-                    <HeaderIntro disc="توانایی های من برای کمک ب شما" title="مهارت ها" />
+                    <HeaderSctionBody title="مهارت ها"  desc="توانایی های من برای کمک ب شما" />
+
 
                     <div className="md:pb-5 px-5 md:px-24">
                         <div

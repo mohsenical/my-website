@@ -1,11 +1,9 @@
 import Breadcrumb from '../components/modules/Breadcrumb/Breadcrumb'
 import HeaderSctionBody from '../components/modules/HeaderSctionBody/HeaderSctionBody'
-import BlogsSection from '../components/template/BlogsSection'
 import ScrollTopBtn from '../components/modules/ScrollTopBtn/ScrollTopBtn'
 import Articles from '../components/modules/Articles/Articles'
 import { articlesData } from '../Data/articlesData'
 import React from 'react'
-import HeaderIntro from '../components/modules/HeaderIntro/HeaderIntro'
 
 function Blog() {
     return (

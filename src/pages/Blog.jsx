@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import Breadcrumb from '../components/modules/Breadcrumb/Breadcrumb'
 import { articlesData } from '../Data/articlesData';
@@ -30,7 +30,7 @@ function Blog() {
                         <></>
 
 
-                        <div className=" h-[screen] py-5 mt-10 md:px-5 w-full ">
+                        <div className=" h-[screen] px-5 py-5 mt-10 md:px-5 w-full ">
                             <div
                                 className="mx-auto w-[95%] md:w-[90%] bg-white/10 dark:bg-black/50 rounded-2xl overflow-hidden shadow-md p-5"
                             >
@@ -68,7 +68,7 @@ function Blog() {
 
 
 
-                        <div className=" h-[screen] py-5 md:px-5 w-full ">
+                        <div className=" h-[screen] px-5 py-5 md:px-5 w-full ">
                             <div
                                 className="mx-auto w-[95%] md:w-[90%] bg-white/10 dark:bg-black/50 rounded-2xl overflow-hidden shadow-md p-5"
                             >
@@ -92,19 +92,35 @@ function Blog() {
                                     </div>
 
                                     <div className="flex flex-col gap-y-3 md:gap-y-1 py-2 justify-center items-start pr-4  w-full lg:w-[40%] xl:w-[30%]">
-                                        <div className="flex justify-start mx-auto gap-x-3 p-3 w-[90%] border-b border-white/20">
-                                            <GrArticle className='text-slate-500 dark:text-green-900 text-2xl' />
-                                            <h4 className='text-white text-xl mt-1'>جدید ترین مقالات</h4>
-                                        </div>
+                                        <div className="flex justify-between flex-col space-y-2">
 
-                                        <div className="mt-2">
-                                            {
-                                                articlesData.map(data => (
-                                                    <React.Fragment key={data.id}>
-                                                        <NewArticle {...data} />
-                                                    </React.Fragment>
-                                                ))
-                                            }
+                                            <div className="flex justify-start mx-auto gap-x-3 p-3 w-[90%] border-b border-white/20">
+                                                <GrArticle className='text-slate-500 dark:text-green-900 text-2xl' />
+                                                <h4 className='text-white text-xl mt-1'>جدید ترین مقالات</h4>
+                                            </div>
+
+                                            <div className="mt-2">
+                                                {
+                                                    articlesData.map(data => (
+                                                        <React.Fragment key={data.id}>
+                                                            <NewArticle {...data} />
+                                                        </React.Fragment>
+                                                    ))
+                                                }
+                                            </div>
+
+                                        </div>
+                                        <div className=" flex items-start gap-x-3 w-[90%] mt-3 my-2 py-3 overflow-hidden">
+                                            <button className='py-2 px-3 w-30 rounded-xl bg-slate-500 dark:bg-green-900  text-white dark:text-gray-400 hover:text-zinc-400 dark:hover:text-white transition-all text-md cursor-pointer'>
+                                                <Link to="/about-me">
+                                                    صفعه اصلی
+                                                </Link>
+                                            </button>
+                                            <button className='py-2 px-4 w-30 rounded-xl bg-slate-500 dark:bg-green-900  text-white dark:text-gray-400 hover:text-zinc-400 dark:hover:text-white transition-all text-md cursor-pointer'>
+                                                <Link to="/contact-me">
+                                                    تماس
+                                                </Link>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

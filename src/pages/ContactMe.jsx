@@ -8,7 +8,6 @@ import ContactMeBox from '../components/modules/ContactMeBox/ContactMeBox';
 import Accordion from '../components/modules/Accordion/Accordion';
 
 import { contactMeData, accordionData } from '../Data/contactMeData';
-import HeaderIntro from '../components/modules/HeaderIntro/HeaderIntro';
 
 function ContactMe() {
   return (
@@ -38,7 +37,8 @@ function ContactMe() {
 
         <ContactMeSection />
 
-        <HeaderIntro disc="سوالات متداول" title="جواب‌های سریع برای سوالات شما" />
+        <HeaderSctionBody title="سوالات متداول" desc="جواب‌های سریع برای سوالات شما" />
+
 
 
         <div className="pb-5 md:px-24 w-full ">
