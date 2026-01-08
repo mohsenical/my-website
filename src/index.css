@@ -52,7 +52,13 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+html {
+    overflow-x: hidden;
+
+}
 
 body {
     font-family: "Dana DemiBold";
+    width: 100%;
+    overflow-x: hidden;
 }

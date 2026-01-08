@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { IoLocationSharp } from "react-icons/io5";
+import { MdOutlineBrowserUpdated } from "react-icons/md";
 import { AiOutlinePhone } from "react-icons/ai";
 import { CgMail } from "react-icons/cg";
 import { menuItem } from '../../../Data/menuData';
@@ -69,6 +70,10 @@ function Footer() {
                 <div className="flex gap-x-2 items-center justify-start mr-5">
                     <AiOutlinePhone className='text-2xl text-slate-700 dark:text-green-700' />
                     <sapn className="text-md text-black dark:text-gray-400">0914-545-0730</sapn>
+                </div>
+                <div className="flex gap-x-2 items-center justify-start mr-5">
+                    <MdOutlineBrowserUpdated className='text-2xl text-slate-700 dark:text-green-700' />
+                    <sapn className="text-md text-black dark:text-gray-400">آخرین بهروزرسانی:  1404/10/8</sapn>
                 </div>
             </div>
 

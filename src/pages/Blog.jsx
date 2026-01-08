@@ -14,8 +14,6 @@ function Blog() {
 
     const { articleID } = useParams()
 
-    console.log();
-
 
     return (
         <>
@@ -27,8 +25,6 @@ function Blog() {
                 articlesData.filter(data => data.id === Number(articleID)).map(article => (
 
                     <React.Fragment key={article.id}>
-                        <></>
-
 
                         <div className=" h-[screen] px-5 py-5 mt-10 md:px-5 w-full ">
                             <div
